@@ -239,8 +239,8 @@
     <script>
          function ScrollExecute() {
            if($(document).height() - 800 < ($(document).scrollTop() + $(window).height())) {
-               scrollNode = $('.product#more').last();    
-               scrollURL = $('.product#more p a').last().attr("href");
+               scrollNode = $('#more').last();    
+               scrollURL = $('#more p a').last().attr("href");
                if(scrollNode.length > 0 && scrollNode.css('display') != 'none') {
                    $.ajax({
                        type: 'GET',
