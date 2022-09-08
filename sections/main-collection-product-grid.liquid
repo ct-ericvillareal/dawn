@@ -127,6 +127,12 @@
             {%- endif -%}
           </div>
         {%- endif -%}
+
+        {% if paginate.next %}
+        <div id="more"><p>&darr; <a href="{{ paginate.next.url }}">More</a></p></div>        
+        {% endif %}
+
+        <div id="product-list-foot"></div>
       {%- endpaginate -%}
     </div>
   </div>
