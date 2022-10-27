@@ -294,6 +294,11 @@
 
     <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
     <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
+
+    <p class="cart-attribute__field">
+    <label for="date">Date</label>
+    <input required class="required" id="date" type="text" name="attributes[Date]" value="{{ cart.attributes["Date"] }}">
+    </p>
   </form>
 </cart-items>
 
