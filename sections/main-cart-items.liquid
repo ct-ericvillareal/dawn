@@ -295,10 +295,20 @@
     <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
     <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
 
-    <p class="cart-attribute__field">
-    <label for="date">Date</label>
-    <input required class="required" id="date" type="text" name="attributes[Date]" value="{{ cart.attributes["Date"] }}">
-    </p>
+<div class="cart-dob">
+    <label for="dateofbirth" class="label">Date of birth</label>
+    <input required type="date" name="attributes[Date of birth]" id="dateofbirth" value="{{ cart.attributes["Your name"] }}"/>
+  </div>
+    <div class="cart-recipient">
+  <label for="recipient" class="label">Recipient Email</label>
+  <input required type="email" name="attributes[Recipient Email]" value="{{ cart.attributes["Recipient Email"] }}" id="recipient"/>
+
+</div>
+    <div class="cart-message">
+    <label for="message" class="label">Message</label>
+    <textarea name="attributes[Message]" value="" id="message">{{ cart.attributes["Your name"] }}</textarea>
+    
+  </div>
   </form>
 </cart-items>
 
