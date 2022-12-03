@@ -47,11 +47,11 @@
     >
   {%- endif -%}
 
+  <div style="padding: 0 20px">
+    <p>collection ref:</p>
+    = {{ product.metafields.custom.collectionref.value }}
+  </div>
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-    <div style="padding: 0 20px">
-      <p>collection ref:</p>
-      = {{ product.metafields.custom.collectionref }}
-    </div>
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       <media-gallery
         id="MediaGallery-{{ section.id }}"
