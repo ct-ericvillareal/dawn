@@ -48,6 +48,8 @@
   {%- endif -%}
 
   <div style="padding: 0 20px">
+    <p>collection lorem:</p>
+    = {{ product.metafields.my_fields.lorem }}
     <p>collection ref:</p>
     = {{ product.metafields.custom.collectionref.value.title }}
     <div>
