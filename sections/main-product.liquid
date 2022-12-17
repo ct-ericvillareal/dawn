@@ -3,6 +3,8 @@
   class="page-width section-{{ section.id }}-padding"
   data-section="{{ section.id }}"
 >
+  <p>collection lorem:</p>
+  = {{ product.metafields.my_fields.lorem }}
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
@@ -48,8 +50,6 @@
   {%- endif -%}
 
   <div style="padding: 0 20px">
-    <p>collection lorem:</p>
-    = {{ product.metafields.my_fields.lorem }}
     <p>collection ref:</p>
     = {{ product.metafields.custom.collectionref.value.title }}
     <div>
