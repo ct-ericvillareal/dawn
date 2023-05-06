@@ -15,6 +15,12 @@
           "settings": {
           }
         },
+        "d2973559-b2a7-41f8-b70d-9f3185ec3e7d": {
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/star-rating\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
         "caption": {
           "type": "text",
           "settings": {
@@ -95,6 +101,7 @@
       "block_order": [
         "vendor",
         "title",
+        "d2973559-b2a7-41f8-b70d-9f3185ec3e7d",
         "caption",
         "price",
         "variant_picker",
