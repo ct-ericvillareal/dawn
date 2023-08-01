@@ -236,7 +236,8 @@
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
-  </head>
+  {% include 'bss-store-locator-header' %}
+                </head>
 
   <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
@@ -295,7 +296,7 @@
     {%- endif -%}
    {% include 'smile-initializer' %}
 
-{% include 'subscribe-it-helper' %}</body>
+{% include 'subscribe-it-helper' %}{% if content_for_header contains 'https://store-locator-api.bsscommerce.com' %}{% include 'bss-store-locator-js-liquid' %}{% endif %}</body>
 </html>
 
   
