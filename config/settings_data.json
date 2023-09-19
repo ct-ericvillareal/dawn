@@ -224,6 +224,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "17440586452650986878": {
+        "type": "shopify:\/\/apps\/mappy-dealer-store-locator\/blocks\/bss-sl\/edfca2bd-82ad-413c-b32c-580d239b17ab",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
