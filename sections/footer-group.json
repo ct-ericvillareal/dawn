@@ -4,6 +4,28 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "147020e8-a85f-4147-bf10-4af9f421b1d2": {
+          "type": "shopify:\/\/apps\/forms\/blocks\/inline\/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "55109",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#1878B9",
+            "errors_color": "#E02229",
+            "text_alignment": "left",
+            "form_alignment": "flex-start",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "147020e8-a85f-4147-bf10-4af9f421b1d2"
+      ],
       "settings": {
         "color_scheme": "background-1",
         "newsletter_enable": true,
