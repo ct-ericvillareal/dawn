@@ -14,7 +14,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -66,10 +66,81 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "featured_product_MF3wfE": {
+      "type": "featured-product",
+      "blocks": {
+        "text_FqkciD": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_KdVpcr": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_VeFVPq": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker_Q9Rd9P": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_j8w8KA": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons_R8FP7V": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_zrjUgc": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_FqkciD",
+        "title_KdVpcr",
+        "price_VeFVPq",
+        "variant_picker_Q9Rd9P",
+        "quantity_selector_j8w8KA",
+        "buy_buttons_R8FP7V",
+        "share_zrjUgc"
+      ],
+      "settings": {
+        "product": "adidas-superstar-80s-1",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "featured_product_MF3wfE"
   ]
 }
