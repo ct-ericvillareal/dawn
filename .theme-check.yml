@@ -10,5 +10,3 @@ TemplateLength:
   enabled: true
   severity: suggestion
   max_length: 1000
-ImgLazyLoading:
-  severity: error
