@@ -1,4 +1,12 @@
+ImgLazyLoading:
+  severity: error
+ValidHTMLTranslation:
+  severity: error
 MatchingTranslations:
   enabled: false
+SchemaJsonFormat:
+  severity: suggestion
 TemplateLength:
-  enabled: false
+  enabled: true
+  severity: suggestion
+  max_length: 1000
