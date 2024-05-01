@@ -215,7 +215,518 @@
           "due_later": "Kabuuang dapat bayaran %{due_at}",
           "due_on_fulfillment": "Kabuuang dapat bayaran sa katuparan"
         }
+      },
+      "processing": {
+        "action_required": "Kinakailangan ang pagkilos"
+      },
+      "failed_payment": {
+        "page_title": "Hindi maproseso ang pagbabayad",
+        "title": "Hindi maproseso ang pagbabayad",
+        "payment_not_processed_title": "Hindi maproseso ang iyong bayad",
+        "payment_not_processed_text": "Hindi ka nasingil. Bumalik sa iyong cart para kumpletuhin ang iyong pagbili.",
+        "return_to_cart_button_label": "Bumalik sa cart"
+      },
+      "payment_gateway": {
+        "bank_deposit_label": "Deposito sa bangko",
+        "money_order_label": "Utos ng Pera",
+        "deferred_payment_label": "Pumili ng paraan ng pagbabayad sa ibang pagkakataon",
+        "fixed_payment_label": "Ang iyong pagbabayad ay dapat bayaran sa {{dueDate}} .",
+        "generic_payment_terms": "Ikaw ay nasa {{translatedName}} na mga tuntunin. Ang iyong pagbabayad ay dapat bayaran sa {{dueDate}} .",
+        "login_prompt": {
+          "no_access": {
+            "message": "{{logIn}} sa isang account na may access sa lokasyong ito upang magdagdag o gumamit ng mga naka-save na paraan ng pagbabayad.",
+            "link": "Mag log in"
+          }
+        },
+        "direct_payment_terms": "Ikaw ay nasa {{translatedName}} na mga tuntunin. Sisingilin ang iyong card sa {{dueDate}} .",
+        "fixed_direct_payment_terms": "Sisingilin ang iyong card sa {{dueDate}} .",
+        "order_due_on_fulfillment_choose_later": "Ang iyong pagbabayad ay dapat bayaran sa sandaling matupad ang iyong order.",
+        "order_due_on_fulfillment_payment": "Sisingilin ang iyong card kapag natupad na ang iyong order.",
+        "draft_order_payment_due_later_no_terms": "Ang iyong pagbabayad ay dapat bayaran kapag nakumpirma na ang iyong order.",
+        "draft_order_payment_due_later_no_terms_payment_selected": "Sisingilin ang iyong card kapag nakumpirma na ang iyong order.",
+        "draft_order_payment_due_later_terms": "Mapupunta ka sa mga tuntunin ng {{translatedName}} kapag nakumpirma na ang iyong order.",
+        "draft_order_payment_due_on_fulfillment": "Ang iyong pagbabayad ay dapat bayaran kapag ang iyong order ay nakumpirma at natupad."
+      },
+      "thank_you": {
+        "title": "Salamat sa iyong pagbili!",
+        "confirmation_email_sent_text": "Isang email ng kumpirmasyon ang ipinadala sa %{email}",
+        "return_to_store_link_label": "Ipagpatuloy ang pamimili",
+        "print_link_label": "I-print ang resibo",
+        "payment_information_title": "Impormasyon sa Pagbabayad",
+        "shipping_information_title": "Impormasyon ng Pagpapadala",
+        "page_title": "Salamat, %{display_name}!",
+        "page_title_no_name": "Salamat!",
+        "cancelled_page_title": "Kinansela ang order",
+        "failed_pending_payment_page_title": "May problema sa iyong pagbabayad",
+        "customer_information_title": "Mga detalye ng order",
+        "contact_information_title": "Impormasyon sa pakikipag-ugnayan",
+        "company_location_title": "Lokasyon",
+        "shipping_address_title": "Address ng pagpapadala",
+        "shipping_address_map_title": "Google map na nagpapakita ng pin point ng shipping address: %{address}",
+        "payment_method_title": "Paraan ng Pagbayad",
+        "shipping_method_title": "Pamamaraan ng Pagpapadala",
+        "tracking_number": "Bilang na palatandaan:",
+        "estimated_arrival": "Tinantyang petsa ng paghahatid: ",
+        "estimated_delivery": "Kasalukuyang pagtatantya ng paghahatid: ",
+        "re-order": "Muling i-order ang parehong mga item",
+        "confirmed": "Nakumpirma",
+        "gift_card_confirmation_by_text": "Kung hindi mo ito natanggap, ipadala muli ang text o makipag-ugnayan sa amin.",
+        "gift_card_confirmation_by_email": "Kung hindi mo ito natanggap, ipadala muli ang email o makipag-ugnayan sa amin.",
+        "gift_card_title": "Mga gift card",
+        "resend_gift_cards": "Muling ipadala ang mga gift card",
+        "thank_you_title": "Nakumpirma ang iyong order",
+        "thank_you_title_payment": "Nakumpirma ang iyong pagbabayad",
+        "thank_you_title_review": "Ang iyong order ay naisumite para sa pagsusuri",
+        "thank_you_title_payments_app_pending_default": "Pinoproseso ang iyong bayad",
+        "thank_you_title_payments_app_pending_buyer_action_required": "Natanggap ang iyong order",
+        "thank_you_title_payments_app_failed_pending_payment": "Hindi maproseso ang iyong bayad",
+        "thank_you_confirmed_order_with_email": "Makakatanggap ka ng email ng kumpirmasyon kasama ang iyong numero ng order sa ilang sandali.",
+        "thank_you_confirmed_order_with_phone": "Makakatanggap ka ng text ng kumpirmasyon kasama ang iyong numero ng order sa ilang sandali.",
+        "thank_you_confirmed_order_with_email_and_phone": "Makakatanggap ka ng email ng kumpirmasyon kasama ang iyong numero ng order sa ilang sandali.",
+        "thank_you_confirmed_order_with_email_payment": "Nagbayad ka sa iyong order %{date}.",
+        "thank_you_confirmed_order_with_phone_payment": "Nagbayad ka sa iyong order %{date}.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "Nagbayad ka sa iyong order %{date}.",
+        "thank_you_confirmed_order_with_email_pick_up": "Makakatanggap ka ng email kapag handa na para sa pickup ang iyong order.",
+        "thank_you_confirmed_order_with_phone_pick_up": "Makakatanggap ka ng text kapag handa na para sa pickup ang iyong order.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Makakatanggap ka ng email kapag handa na para sa pickup ang iyong order.",
+        "thank_you_confirmed_order_with_missing": "Makipag-ugnayan sa amin sa pamamagitan ng email o telepono para makatanggap ng kumpirmasyon ng order.",
+        "thank_you_confirmed_order_with_missing_payment": "Makipag-ugnayan sa amin sa pamamagitan ng email o telepono para makatanggap ng kumpirmasyon ng order.",
+        "thank_you_confirmed_order_with_missing_pick_up": "Makipag-ugnayan sa amin sa pamamagitan ng email o telepono para makatanggap ng kumpirmasyon ng order.",
+        "thank_you_confirmed_order_with_draft": "Ipapaalam namin sa iyo kung kailangan namin ng higit pang impormasyon o kapag nakumpirma na ang iyong order.",
+        "thank_you_confirmed_order_with_draft_payment": "Ipapaalam namin sa iyo kung kailangan namin ng higit pang impormasyon o kapag nakumpirma na ang iyong order.",
+        "thank_you_confirmed_order_with_draft_pick_up": "Ipapaalam namin sa iyo kung kailangan namin ng higit pang impormasyon o kapag nakumpirma na ang iyong order.",
+        "thank_you_payments_app_failed_pending_payment": "Hindi ka siningil para sa iyong order. Bumalik sa iyong cart para suriin ang iyong order at magbayad muli.",
+        "thank_you_payments_app_failed_pending_payment_payment": "Hindi ka siningil para sa iyong order. Bumalik sa iyong cart para suriin ang iyong order at magbayad muli.",
+        "thank_you_payments_app_failed_pending_payment_pick_up": "Hindi ka siningil para sa iyong order. Bumalik sa iyong cart para suriin ang iyong order at magbayad muli.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing": "Makipag-ugnayan sa amin sa pamamagitan ng email o telepono para makatanggap ng kumpirmasyon ng order.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_payment": "Makipag-ugnayan sa amin sa pamamagitan ng email o telepono para makatanggap ng kumpirmasyon ng order.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_pick_up": "Makipag-ugnayan sa amin sa pamamagitan ng email o telepono para makatanggap ng kumpirmasyon ng order.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone": "Makakatanggap ka ng email ng kumpirmasyon kasama ang iyong numero ng order sa ilang sandali.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_payment": "Makakatanggap ka ng email ng kumpirmasyon kasama ang iyong numero ng order sa ilang sandali.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "Makakatanggap ka ng email ng kumpirmasyon kasama ang iyong numero ng order sa ilang sandali.",
+        "thank_you_payments_app_pending_payment_description_default_with_email": "Makakatanggap ka ng email ng kumpirmasyon kasama ang iyong numero ng order sa ilang sandali.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_payment": "Makakatanggap ka ng email ng kumpirmasyon kasama ang iyong numero ng order sa ilang sandali.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_pick_up": "Makakatanggap ka ng email ng kumpirmasyon kasama ang iyong numero ng order sa ilang sandali.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone": "Makakatanggap ka ng text ng kumpirmasyon kasama ang iyong numero ng order sa ilang sandali.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_payment": "Makakatanggap ka ng text ng kumpirmasyon kasama ang iyong numero ng order sa ilang sandali.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_pick_up": "Makakatanggap ka ng text ng kumpirmasyon kasama ang iyong numero ng order sa ilang sandali.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing": "Makipag-ugnayan sa amin sa pamamagitan ng email o telepono para makatanggap ng kumpirmasyon ng order.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_payment": "Makipag-ugnayan sa amin sa pamamagitan ng email o telepono para makatanggap ng kumpirmasyon ng order.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_pick_up": "Makipag-ugnayan sa amin sa pamamagitan ng email o telepono para makatanggap ng kumpirmasyon ng order.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone": "Pagkatapos makumpleto ang iyong pagbabayad, makakatanggap ka ng email ng kumpirmasyon na may numero ng iyong order.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_payment": "Pagkatapos makumpleto ang iyong pagbabayad, makakatanggap ka ng email ng kumpirmasyon na may numero ng iyong order.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_pick_up": "Pagkatapos makumpleto ang iyong pagbabayad, makakatanggap ka ng email ng kumpirmasyon na may numero ng iyong order.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email": "Pagkatapos makumpleto ang iyong pagbabayad, makakatanggap ka ng email ng kumpirmasyon na may numero ng iyong order.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "Pagkatapos makumpleto ang iyong pagbabayad, makakatanggap ka ng email ng kumpirmasyon kasama ang numero ng iyong order.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "Pagkatapos makumpleto ang iyong pagbabayad, makakatanggap ka ng email ng kumpirmasyon na may numero ng iyong order.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone": "Pagkatapos makumpleto ang iyong pagbabayad, makakatanggap ka ng text ng kumpirmasyon kasama ang numero ng iyong order.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "Pagkatapos makumpleto ang iyong pagbabayad, makakatanggap ka ng text ng kumpirmasyon kasama ang numero ng iyong order.",
+        "customer_information_hidden_fields_message": "Mag-log in upang tingnan ang lahat ng impormasyon ng customer.",
+        "cancelled_title": "Nakansela ang iyong order",
+        "cancelled_description": "Nakansela ang iyong order noong %{date}. Makipag-ugnayan sa amin kung mayroon kang anumang mga katanungan.",
+        "order_number_label": "Numero ng order",
+        "customer_validation_error": "Maglagay ng wastong email o numero ng order.",
+        "customer_validation_error_phone": "Maglagay ng wastong numero ng telepono o order.",
+        "login": "Mag log in",
+        "unfulfilled_items_title": "Paghahanda para sa pagpapadala",
+        "unfulfilled_items_description": "Kasalukuyan naming inihahanda ang mga item na ito para sa pagpapadala.",
+        "marker": {
+          "current": "Kasalukuyang lokasyon ng pagpapadala",
+          "shipping": "Address ng pagpapadala"
+        },
+        "pick_up_in_store_marker": {
+          "current": "Kasalukuyang lokasyon ng pagpapadala",
+          "shipping": "Lokasyon ng pickup"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "Mga item sa kargamento na ito",
+          "unfulfilled_table_title": "Mga bagay na naghahanda para sa pagpapadala",
+          "product_image_label": "Larawan ng produkto",
+          "description_label": "Paglalarawan",
+          "quantity_label": "Dami"
+        },
+        "order_updates_description_missing": "Hindi ka nakakatanggap ng mga update sa pagpapadala.",
+        "order_updates_subscribe_to_email_notifications": "Makakuha ng mga update sa pagpapadala sa pamamagitan ng email",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Makakuha ng mga update sa pagpapadala sa pamamagitan ng email o text",
+        "order_updates_subscribe_to_phone_notifications": "Makakuha ng mga update sa pagpapadala sa pamamagitan ng text",
+        "order_updates_submit_subscription": "Ipasa",
+        "track_shipment": "Subaybayan ang pagpapadala",
+        "other_options": "Iba pang mga pagpipilian",
+        "delivery_information_label": "Impormasyon sa paghahatid:",
+        "gift_card_sent_confirmation": "Ipinadala ang mga gift card",
+        "qr_code": {
+          "send_link_to_phone": "O magpadala ng link sa iyong telepono",
+          "title": "Subaybayan sa iyong telepono"
+        },
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "title": "I-scan gamit ang iyong telepono"
+          },
+          "sms": {
+            "title": "O magpadala ng link sa iyong telepono"
+          }
+        },
+        "view_business_customer_account": "Tingnan ang account",
+        "breadcrumbs_submitted": "Naisumite",
+        "breadcrumbs_in_review": "Sa pagsusuri",
+        "breadcrumbs_confirmed": "Nakumpirma",
+        "missing_shipping_address_banner": {
+          "title": "Walang shipping address ang order",
+          "text_html": "%{contact_us} upang idagdag ang iyong address",
+          "contact_us": "Makipag-ugnayan sa amin"
+        },
+        "first_payment_complete": "Kumpleto ang unang pagbabayad",
+        "in_store_purchase": "Pagbili sa tindahan",
+        "location_title": "Lokasyon",
+        "thank_you_ready_for_picked_up": "Ang iyong order ay kinuha sa %{address}.",
+        "ready_for_delivery": "Handa na para sa paghahatid",
+        "order_updates_subscribe_to_email_notifications_failed": "Hindi namin maiimbak ang email na ito para sa mga update. Pakisubukang muli o gumamit ng ibang email.",
+        "order_updates_subscribe_to_email_notifications_email_already_exists": "Umiiral na ang email na iyong inilagay.",
+        "subscriptions_management": {
+          "description": "Magpatuloy sa iyong account upang tingnan at pamahalaan ang iyong mga subscription.",
+          "button_label": "Pamahalaan ang iyong subscription"
+        },
+        "manage_order_label": "Pamahalaan ang iyong order",
+        "gift_card_confirmation_by_text_typ": {
+          "one": "Makakatanggap ka ng text kasama ang iyong gift card sa loob ng ilang minuto.",
+          "other": "Makakatanggap ka ng text kasama ang iyong mga gift card sa loob ng ilang minuto."
+        },
+        "gift_card_confirmation_by_email_typ": {
+          "one": "Makakatanggap ka ng email kasama ang iyong gift card sa loob ng ilang minuto.",
+          "other": "Makakatanggap ka ng email kasama ang iyong mga gift card sa loob ng ilang minuto."
+        },
+        "gift_card_email_title": {
+          "one": "Ipinadala ang gift card sa pamamagitan ng email",
+          "other": "Ang mga gift card ay ipinadala sa pamamagitan ng email"
+        },
+        "gift_card_text_title": {
+          "one": "Ipinadala ang gift card sa pamamagitan ng text message",
+          "other": "Ang mga gift card ay ipinadala sa pamamagitan ng text message"
+        },
+        "resend_gift_cards_by_email": "Muling ipadala ang email",
+        "resend_gift_cards_by_text": "Muling ipadala ang text message",
+        "gift_card_resent_confirmation": {
+          "one": "Ipinadala ang gift card.",
+          "other": "Nagalit ang mga gift card."
+        },
+        "gift_card_resend_failure": {
+          "one": "Nagkaroon ng problema sa muling pagpapadala ng iyong gift card. Subukan muli o makipag-ugnayan sa amin.",
+          "other": "Nagkaroon ng problema sa muling pagpapadala ng iyong mga gift card. Subukan muli o makipag-ugnayan sa amin."
+        }
+      },
+      "vaulted": {
+        "change_button": "Baguhin"
+      },
+      "review": {
+        "title": "Pagsusuri",
+        "review_title": "Suriin at magbayad",
+        "checkout_as_guest": "Checkout bilang bisita",
+        "checkout_a_different_way": "Mag-checkout sa ibang paraan",
+        "blocks": {
+          "contact_method_title": "Makipag-ugnayan",
+          "billing_address_title": "Pagsingil",
+          "shipping_address_title": "Ipadala sa",
+          "shipping_method_title": "Pamamaraan ng Pagpapadala",
+          "payment_method_title": "Paraan ng Pagbayad",
+          "change_link_label": "Baguhin",
+          "change_contact_method_link_label": "Baguhin ang impormasyon ng contact",
+          "change_billing_address_link_label": "Baguhin ang billing address",
+          "change_shipping_address_link_label": "Baguhin ang address ng pagpapadala",
+          "change_shipping_method_link_label": "Baguhin ang paraan ng pagpapadala",
+          "change_payment_method_link_label": "Palitan ANG proseso ng pagbabayad",
+          "pick_up_in_store_shipping_method_html": "Kunin sa tindahan · %{location_name}",
+          "purchase_order_number_title": "Numero ng PO",
+          "change_purchase_order_number_label": "Baguhin ang PO number",
+          "change_delivery_method_link_label": "Baguhin ang paraan ng paghahatid",
+          "no_address": "(Walang address)",
+          "no_purchase_order_number": "(Walang PO number)",
+          "due_after_order_reviewed_html": "Dapat bayaran pagkatapos masuri ang order",
+          "review_title_free_order": "Suriin at kumpletuhin ang iyong order",
+          "payment_method_saved_company_location": "I-save ang card para sa lokasyong ito"
+        },
+        "block_title": "Suriin ang iyong impormasyon"
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Mag-email sa akin ng mga balita at alok",
+        "post_accept_marketing_checkbox_label": "Naka-subscribe ka upang makatanggap ng mga balita at alok sa email",
+        "pending_accept_marketing_checkbox_label": "Tingnan ang iyong email upang kumpirmahin ang iyong subscription sa mga balita at alok",
+        "accept_sms_checkbox_label": "I-text ako ng mga balita at alok",
+        "disclaimer": {
+          "privacy_policy": "Patakaran sa Privacy",
+          "terms_of_service": "Mga Tuntunin ng Serbisyo"
+        },
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "Patakaran sa Privacy",
+            "terms_of_service": "Mga Tuntunin ng Serbisyo",
+            "description_html": "Sa pamamagitan ng pag-sign up sa pamamagitan ng text, sumasang-ayon kang makatanggap ng mga umuulit na awtomatikong mensahe sa marketing, kasama ang mga paalala sa cart, sa ibinigay na numero ng telepono. Ang pahintulot ay hindi isang kondisyon ng pagbili. Tumugon sa STOP upang mag-unsubscribe. Tumugon ng HELP para sa tulong. Nag-iiba ang dalas ng mensahe. Maaaring malapat ang mga rate ng mensahe at data. Tingnan ang aming %{privacy_policy_link} at %{terms_of_service_link}.",
+            "description_transactional_html": "Maaari kang makatanggap ng mga text message na may kaugnayan sa pagkumpirma ng order at mga update sa pagpapadala. Tumugon sa STOP upang mag-unsubscribe. Tumugon ng HELP para sa tulong. Nag-iiba ang dalas ng mensahe. Maaaring malapat ang mga rate ng mensahe at data. Tingnan ang aming %{privacy_policy_modal_link} at %{terms_of_service_modal_link}."
+          },
+          "mobile_phone_number": "Numero ng mobile phone"
+        }
+      },
+      "wallets": {
+        "errors": {
+          "invalid": {
+            "shipping_address": "Maglagay ng wastong address sa pagpapadala",
+            "billing_address": "Maglagay ng wastong billing address",
+            "shipping_option": "Pumili ng wastong opsyon sa pagpapadala",
+            "email": "Maglagay ng wastong email",
+            "zone": "Maglagay ng wastong estado \/ lalawigan",
+            "postal_code": "Maglagay ng wastong ZIP \/ postal code",
+            "reduction_code": "Maglagay ng wastong discount code o gift card",
+            "billing_must_match_shipping": "Dapat tumugma sa address ng pagpapadala"
+          },
+          "missing": {
+            "first_name": "Maglagay ng unang pangalan",
+            "last_name": "Maglagay ng apelyido",
+            "address1": "Maglagay ng address",
+            "address2": "Pumasok sa isang apartment, suite, atbp.",
+            "city": "Pumasok sa isang lungsod",
+            "province": "Pumili ng estado \/ probinsya",
+            "country": "Pumili ng bansa\/rehiyon",
+            "zip": "Maglagay ng ZIP \/ postal code",
+            "phone": "Maglagay ng numero ng telepono"
+          },
+          "formatting": {
+            "name_contains_emojis": "Tanggalin ang emoji sa iyong pangalan",
+            "postal_code_contains_emoji": "Tanggalin ang emoji mula sa iyong postal code",
+            "first_name_too_long": "Ang unang pangalan ay naglalaman ng napakaraming titik",
+            "last_name_too_long": "Masyadong maraming titik ang apelyido"
+          },
+          "select_different_shipping_address_to_resolve_errors": "Ang iyong address sa pagpapadala ay hindi wasto. Pumili ng ibang address o gumamit ng bago."
+        }
+      },
+      "note": {
+        "length_exceeds_maximum": "Bawasan ang laki ng tala sa 5000 o mas kaunting mga character."
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "gift_card_price_must_be_greater_than_zero": "Ang presyo ng gift card ay dapat na mas mataas sa 0.",
+            "subtotal_limit_reached": "Naabot na ang maximum na halaga ng mga line item."
+          }
+        }
       }
+    },
+    "pagination": {
+      "previous": "Nakaraang",
+      "next": "Susunod"
+    },
+    "links": {
+      "powered_by_shopify": "Pinapatakbo ng Shopify",
+      "learn_more": "Matuto pa"
+    },
+    "feed": {
+      "more": "Higit pa"
+    },
+    "attributes": {
+      "password_confirmation": "Ang pagkumpirma ng password",
+      "first_name": "pangalan",
+      "last_name": "huling pangalan",
+      "body": "katawan"
+    },
+    "addresses": {
+      "pincode": "Pin code",
+      "region": "Rehiyon",
+      "province": "Lalawigan",
+      "state": "Estado",
+      "state_and_territory": "Estado\/teritoryo",
+      "emirate": "emirate",
+      "governorate": "Gobernadora",
+      "confirm": "Sigurado ka bang gusto mong tanggalin ang address na ito?"
+    },
+    "collections": {
+      "sorting": {
+        "manual": "Itinatampok",
+        "best_selling": "Pinakamabenta",
+        "az": "Ayon sa alpabeto, AZ",
+        "za": "Ayon sa alpabeto, ZA",
+        "price_ascending": "Presyo, mababa hanggang mataas",
+        "price_descending": "Presyo, mataas hanggang mababa",
+        "date_ascending": "Petsa, luma hanggang bago",
+        "date_descending": "Petsa, bago hanggang luma"
+      }
+    },
+    "errors": {
+      "blank": "hindi pwedeng blangko",
+      "blocked_address": "Hindi sinusuportahan ang lokasyong ito.",
+      "credit_card_session_expired": "Nag-expire na ang awtorisasyon sa credit card, pakipasok muli ang iyong impormasyon sa pagbabayad. Ang iyong card ay hindi nasingil.",
+      "empty": "hindi maaaring walang laman",
+      "invalid_email": "Dapat ay isang wastong e-mail address",
+      "discount_disabled": "Ang diskwento na ito ay hindi pinagana",
+      "discount_expired": "Wala nang bisa ang diskwento na ito",
+      "discount_limit_reached": "Naabot na ng diskwento na ito ang limitasyon sa paggamit nito",
+      "discount_not_found": "Hindi makahanap ng wastong diskwento na tumutugma sa code na inilagay",
+      "customer_already_used_once_per_customer_discount_notice": "Naabot na ng diskwento na ito ang limitasyon sa paggamit nito",
+      "gift_card_already_applied": "Nailapat na ang code sa iyong pag-checkout",
+      "gift_card_code_invalid": "Di-wasto ang code",
+      "gift_card_currency_mismatch": "Ang iyong gift card ay nasa %{gift_card_currency}. Makipag-ugnayan sa amin upang maibigay itong muli sa %{checkout_currency}.",
+      "gift_card_depleted": "Walang natitirang pondo sa gift card na ito",
+      "gift_card_disabled": "Naka-disable ang gift card",
+      "gift_card_expired": "Nag-expire na ang gift card",
+      "invalid": "ay hindi wasto",
+      "bad_domain": "naglalaman ng di-wastong pangalan ng domain",
+      "taken": "nakuha na",
+      "contains_html_tags": "hindi maaaring maglaman ng mga HTML tag",
+      "too_short": "ay masyadong maikli (minimum ay %{count} na mga character)",
+      "too_long": "ay masyadong mahaba (ang maximum ay %{count} na mga character)",
+      "password_mismatch": "dapat tumugma sa ibinigay na password",
+      "contains_spaces": "nagsisimula o nagtatapos sa mga puwang.",
+      "email_domain_invalid": "hindi suportado ang provider",
+      "invalid_for_country": "ay hindi wasto para sa %{country}",
+      "invalid_for_country_and_province": "ay hindi wasto para sa %{province} at %{country}",
+      "invalid_province_in_country": "ay hindi wastong lalawigan sa %{country}",
+      "invalid_state_in_country": "ay hindi wastong estado sa %{country}",
+      "invalid_region_in_country": "ay hindi wastong rehiyon sa %{country}",
+      "less_than_or_equal_to": "dapat mas mababa sa o katumbas ng %{count}",
+      "not_supported": "ay hindi suportado",
+      "full_name_required": "Maglagay ng pangalan at apelyido",
+      "invalid_for_card_type": "ay hindi wasto",
+      "invalid_type": "paumanhin, hindi kami tumatanggap ng mga card ng ganitong uri",
+      "invalid_format": "hindi wasto ang format",
+      "expired": "nag-expire na",
+      "invalid_start_date_or_issue_number_for_debit": "isang wastong petsa ng pagsisimula o numero ng isyu ay kinakailangan",
+      "invalid_expiry_year": "ay hindi wastong taon ng pag-expire",
+      "reset_password_html": "Ang email address na ito ay nauugnay na sa isang account. Kung sa iyo ang account na ito, maaari mong <a href=\"\/account\/login#recover\">i-reset ang iyong password<\/a>",
+      "verify_email": "Nagpadala kami ng email sa %{customer_email}, paki-click ang link na kasama upang i-verify ang iyong email address.",
+      "product_not_available": "hindi nai-publish ang produkto para sa customer na ito."
+    }
+  },
+  "customer_accounts": {
+    "orders": {
+      "order_status": {
+        "attempted_delivery_label": "sinubukang ipadala",
+        "attempted_delivery_description": "Ang pagtatangka sa paghahatid ay hindi nagtagumpay.",
+        "attempted_to_deliver_label": "Sinubukan ihatid",
+        "confirmed_description": "Natanggap namin ang iyong order.",
+        "on_its_way_description": "Papunta na ang padala na ito.",
+        "out_for_delivery_description": "Ang kargamento na ito ay para sa paghahatid.",
+        "preparing_for_shipping_label": "Paghahanda para sa pagpapadala",
+        "preparing_for_shipping_description": "Ang mga item na ito ay inihahanda para sa pagpapadala.",
+        "ready_for_pickup_label": "Handa nang sunduin",
+        "ready_for_pickup_description": "Ang mga item na ito ay handa nang kunin. Mangyaring dalhin ang iyong kumpirmasyon ng order kapag kinuha mo ang iyong order.",
+        "ready_for_pickup_location": "Handa nang kunin ang iyong order sa lokasyon",
+        "picked_up_label": "Pinulot",
+        "picked_up_description": "Ang mga item na ito ay kinuha.",
+        "canceled_description": "Nakansela ang iyong order noong {{date}} .",
+        "canceled_label": "Kinansela",
+        "canceled_title": "Nakansela ang iyong order",
+        "come_back": "Bumalik sa page na ito para sa mga update sa status ng iyong padala.",
+        "company_tracking_number": "{{company}} tracking number:",
+        "confirmed_label": "Nakumpirma",
+        "confirmed_title": "Nakumpirma ang iyong order",
+        "confirmed_description_pickup": "Makakatanggap ka ng email kapag handa na para sa pickup ang iyong order.",
+        "confirmed_description_digital": "Makakatanggap ka ng email kapag handa na ang iyong order.",
+        "confirmed_description_gift_card_text": "Makakatanggap ka ng text kapag handa na ang iyong order.",
+        "delivered_description": "Naihatid na ang padala na ito.",
+        "complete_label": "Kumpleto",
+        "delivered_label": "Naihatid",
+        "delivered_title": "Naihatid na ang iyong padala",
+        "delivered_description_digital": "Kumpleto na ang iyong order.",
+        "delivered_description_gift_card": {
+          "one": "Ipinadala ang gift card sa pamamagitan ng email.",
+          "other": "Ang mga gift card ay ipinadala sa pamamagitan ng email."
+        },
+        "delivered_description_gift_card_text": {
+          "one": "Ipinadala ang gift card sa pamamagitan ng text.",
+          "other": "Ang mga gift card ay ipinadala sa pamamagitan ng text."
+        },
+        "gift_card_label": {
+          "other": "Mga gift card"
+        },
+        "gift_card_resend": {
+          "one": "Muling ipadala ang email",
+          "other": "Muling ipadala ang mga email"
+        },
+        "gift_card_resend_text": {
+          "one": "Muling ipadala ang text",
+          "other": "Muling ipadala ang mga text"
+        },
+        "gift_resend_success": {
+          "one": "Nagalit ang gift card",
+          "other": "Naiinis ang mga gift card"
+        },
+        "gift_resend_failure": {
+          "one": "Nagkaroon ng problema sa muling pagpapadala ng iyong gift card. Subukan muli o makipag-ugnayan sa amin.",
+          "other": "Nagkaroon ng problema sa muling pagpapadala ng iyong mga gift card. Subukan muli o makipag-ugnayan sa amin."
+        },
+        "gift_card_resend_description": {
+          "one": "Kung hindi ito natanggap, ipadala muli ang email o",
+          "other": "Kung hindi sila natanggap, ipadala muli ang mga email o"
+        },
+        "gift_card_resend_description_text": {
+          "one": "Kung hindi ito natanggap, ipadala muli ang text o",
+          "other": "Kung hindi sila natanggap, ipadala muli ang mga text o"
+        },
+        "confirmed_gift_card_additional_description": {
+          "one": "Ipapadala ang gift card sa isang hiwalay na email.",
+          "other": "Ang bawat gift card ay ipapadala sa isang hiwalay na email."
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "Ipapadala ang gift card sa isang hiwalay na text.",
+          "other": "Ang bawat gift card ay ipapadala sa isang hiwalay na text."
+        },
+        "status_timestamp": "Na-update {{date}}",
+        "estimated_delivery": "Inaasahang {{date}}",
+        "delivered": "Dumating {{date}}",
+        "buy_with_prime_logo_accessibility_label": "Amazon Buy na may Prime logo",
+        "in_review_description": "Ipapaalam namin sa iyo kung kailangan namin ng higit pang impormasyon o kapag nakumpirma na ang iyong order.",
+        "in_review_label": "Sa pagsusuri",
+        "in_review_title": "Ang iyong order ay sinusuri",
+        "last_updated": "Huling na-update {{date}}",
+        "multiple_shipments_label": "Maramihang pagpapadala",
+        "multiple_statuses_label": "Maramihang katayuan ng order",
+        "no_tracking_number": "Walang tracking number para sa padala na ito.",
+        "on_its_way_label": "Papunta na",
+        "on_its_way_title": "Paparating na ang iyong padala",
+        "out_for_delivery_label": "umalis upang magpadala",
+        "out_for_delivery_title": "Ilalabas na ang iyong padala",
+        "resume_tracking": "Ipagpatuloy ang pagsubaybay",
+        "submitted_label": "Naisumite",
+        "submitted_description": "Suriin ang mga detalye ng order at pagbabayad.",
+        "there_was_a_problem_label": "Nagkaroon ng problema",
+        "track_shipment": "Subaybayan ang pagpapadala",
+        "request_return": "Humiling ng pagbabalik",
+        "view_order_for_details": "Tingnan ang order para sa mga detalye",
+        "amazon_buy_with_prime": {
+          "order_tracking_link": {
+            "text": "Pamahalaan gamit ang Amazon",
+            "new_window_disclaimer": "(magbubukas ng bagong window)"
+          }
+        }
+      },
+      "status_mark_as_delivered": "Markahan bilang naihatid",
+      "status_title": "Katayuan ng order",
+      "buy_again": "Bumili ulit",
+      "buy_again_accessibility_label": "Bumili muli para sa order {{orderId}}",
+      "manage": "Pamahalaan",
+      "manage_accessiblity_label": "Pamahalaan ang order {{orderId}}",
+      "group_title_label": "Bahagi ng: {{groupTitle}}",
+      "havent_received_your_delivery": "Hindi mo natanggap ang iyong paghahatid?",
+      "didnt_pick_up_order": "Hindi kinuha ang iyong order?",
+      "if_you_didnt_receive_this": "Kung hindi mo ito natanggap,",
+      "if_not_received": {
+        "one": "Kung hindi ito natanggap,",
+        "other": "Kung hindi sila natanggap,"
+      },
+      "let_us_know": "Ipaalam sa amin",
+      "contact_us": "Makipag-ugnayan sa amin."
+    },
+    "order_details": {
+      "shipment_timeline": {
+        "expand_events_label": "Ipakita ang mga detalye",
+        "expand_events_accessibility_label": "Ipakita ang mga detalye ng pagpapadala ng order",
+        "hide_events_label": "Itago ang mga detalye",
+        "hide_events_accessibility_label": "Itago ang mga detalye ng pagpapadala ng order"
+      },
+      "addresses_section_title": "Pagsingil at pagpapadala",
+      "order_details": "Mga detalye ng order",
+      "order_details_skeleton_accessibility_label": "Mag-log in para tingnan ang lahat ng detalye ng order.",
+      "card_ending_with": "nagtatapos sa {{lastDigits}}",
+      "contact": "Makipag-ugnayan",
+      "contact_information": "Impormasyon sa pakikipag-ugnayan",
+      "company": "kumpanya"
     }
   }
 }
