@@ -558,8 +558,14 @@
             "description_html": "Sa pamamagitan ng pag-sign up sa pamamagitan ng text, sumasang-ayon kang makatanggap ng mga umuulit na awtomatikong mensahe sa marketing, kasama ang mga paalala sa cart, sa ibinigay na numero ng telepono. Ang pahintulot ay hindi isang kondisyon ng pagbili. Tumugon sa STOP upang mag-unsubscribe. Tumugon ng HELP para sa tulong. Nag-iiba ang dalas ng mensahe. Maaaring malapat ang mga rate ng mensahe at data. Tingnan ang aming %{privacy_policy_link} at %{terms_of_service_link}.",
             "description_transactional_html": "Maaari kang makatanggap ng mga text message na may kaugnayan sa pagkumpirma ng order at mga update sa pagpapadala. Tumugon sa STOP upang mag-unsubscribe. Tumugon ng HELP para sa tulong. Nag-iiba ang dalas ng mensahe. Maaaring malapat ang mga rate ng mensahe at data. Tingnan ang aming %{privacy_policy_modal_link} at %{terms_of_service_modal_link}."
           },
-          "mobile_phone_number": "Numero ng mobile phone"
-        }
+          "mobile_phone_number": "Numero ng mobile phone",
+          "get_offers_by_text": "Kumuha ng mga alok sa pamamagitan ng text"
+        },
+        "unsubscribe": {
+          "title": "Nag-unsubscribe ka",
+          "description": "Hindi ka na makakatanggap ng anumang paalala sa cart mula sa amin."
+        },
+        "accept_shop_pay_marketing_checkbox_label": "I-sign up ako para sa mga balita at alok mula sa tindahang ito"
       },
       "wallets": {
         "errors": {
@@ -590,8 +596,35 @@
             "first_name_too_long": "Ang unang pangalan ay naglalaman ng napakaraming titik",
             "last_name_too_long": "Masyadong maraming titik ang apelyido"
           },
-          "select_different_shipping_address_to_resolve_errors": "Ang iyong address sa pagpapadala ay hindi wasto. Pumili ng ibang address o gumamit ng bago."
-        }
+          "select_different_shipping_address_to_resolve_errors": "Ang iyong address sa pagpapadala ay hindi wasto. Pumili ng ibang address o gumamit ng bago.",
+          "unavailable": {
+            "title": "Hindi available {{walletName}}",
+            "description": "Hindi available {{walletName}} . Gumamit ng ibang paraan ng pagbabayad o subukang muli sa ibang pagkakataon.",
+            "instructions": "Nagkaroon ng isyu sa {{walletName}} . Bumalik sa store upang subukang muli o tingnan ang ibang paraan."
+          },
+          "generic": "Nagkaroon ng isyu sa {{walletName}} . Subukang muli o gumamit ng ibang paraan ng pagbabayad.",
+          "terminal": "Nagkaroon ng isyu sa {{walletName}} . Mangyaring gumamit ng ibang paraan ng pagbabayad.",
+          "detour": {
+            "stock_problems": "Ang ilang mga item ay hindi na magagamit. Isara ang {{walletName}} at subukang muli.",
+            "price_change": "Nagbago ang ilang presyo ng item. Isara ang {{walletName}} upang suriin ang iyong order at subukang muli.",
+            "queue": "Inilagay ka sa isang pila para mag-checkout. Isara {{walletName}} upang magpatuloy."
+          },
+          "unsupported": {
+            "address": "Hindi makapaghatid ang merchant sa address na ito",
+            "postal_code": "Ang lokasyong ito ay hindi suportado"
+          },
+          "outdated": {
+            "shipping_method": "Nagbago ang mga opsyon sa pagpapadala para sa iyong order. Suriin ang iyong pinili."
+          }
+        },
+        "return_to_store": "Bumalik sa tindahan",
+        "redirect_hint": "Hihilingin sa iyong mag-log in gamit ang {{walletName}} .",
+        "logged_in": "Nakakonekta sa {{email}}",
+        "shipping_line_label": "Pagpapadala",
+        "payment_in_progress_title": "Kasalukuyang isinasagawa ang pagbabayad",
+        "payment_in_progress_body": "Pinoproseso ang iyong bayad. Malapit nang makumpleto ang iyong order.",
+        "call_to_action": "Magbayad gamit ang {{walletName}}",
+        "redirection_notice": "Pagkatapos i-click ang \" {{buttonLabel}} \", ire-redirect ka sa {{walletName}} upang kumpletuhin ang iyong pagbili nang secure."
       },
       "note": {
         "length_exceeds_maximum": "Bawasan ang laki ng tala sa 5000 o mas kaunting mga character."
@@ -875,6 +908,397 @@
           },
           "label": "Walang delivery"
         }
+      },
+      "field_errors": {
+        "email_or_phone_invalid": "Maglagay ng wastong email o numero ng mobile phone",
+        "address_first_name_blank": "Maglagay ng unang pangalan",
+        "address_first_name_too_long": "Masyadong mahaba ang pangalan (maximum ay 255 character)",
+        "address_first_name_contains_emojis": "Hindi maaaring maglaman ng mga emoji ang pangalan",
+        "address_first_name_contains_html_tags": "Hindi maaaring maglaman ng mga HTML tag ang pangalan.",
+        "address_first_name_contains_url": "Hindi maaaring maglaman ng URL ang pangalan",
+        "address_first_name_contains_mathematical_symbols": "Ang pangalan ay hindi maaaring maglaman ng mga mathematical na simbolo",
+        "address_last_name_blank": "Maglagay ng apelyido",
+        "address_last_name_too_long": "Masyadong mahaba ang apelyido (maximum ay 255 character)",
+        "address_last_name_contains_emojis": "Hindi maaaring maglaman ng mga emoji ang apelyido",
+        "address_last_name_contains_html_tags": "Hindi maaaring maglaman ng mga HTML tag ang apelyido.",
+        "address_last_name_contains_url": "Hindi maaaring maglaman ng URL ang apelyido",
+        "address_last_name_contains_mathematical_symbols": "Hindi maaaring maglaman ng mga simbolo ng matematika ang apelyido",
+        "address_address1_blank": "Maglagay ng address",
+        "address_address1_too_long": "Masyadong mahaba ang unang linya ng address (ang maximum ay 255 character)",
+        "address_address1_contains_emojis": "Hindi maaaring maglaman ng mga emoji ang Address1",
+        "address_address1_contains_html_tags": "Ang Address1 ay hindi maaaring maglaman ng mga HTML tag.",
+        "address_address1_contains_mathematical_symbols": "Ang unang linya ng address ay hindi maaaring maglaman ng mga mathematical na simbolo",
+        "address_address2_blank": "Pumasok sa isang apartment, suite, atbp.",
+        "address_address2_too_long": "Ang pangalawang linya ng address ay masyadong mahaba (ang maximum ay 255 character)",
+        "address_address2_contains_emojis": "Hindi maaaring maglaman ng mga emoji ang Address2",
+        "address_address2_contains_html_tags": "Ang Address2 ay hindi maaaring maglaman ng mga HTML tag.",
+        "address_address2_contains_mathematical_symbols": "Ang pangalawang linya ng address ay hindi maaaring maglaman ng mga simbolo ng matematika",
+        "address_city_blank": "Pumasok sa isang lungsod",
+        "address_city_too_long": "Masyadong mahaba ang lungsod (ang maximum ay 255 character)",
+        "address_city_contains_emojis": "Hindi maaaring maglaman ng mga emoji ang lungsod",
+        "address_city_contains_html_tags": "Ang lungsod ay hindi maaaring maglaman ng mga HTML tag.",
+        "address_city_contains_mathematical_symbols": "Ang lungsod ay hindi maaaring maglaman ng mga simbolo ng matematika",
+        "address_country_blank": "Pumili ng bansa\/rehiyon",
+        "address_country_not_supported": "Hindi kami nagpapadala sa bansa o rehiyong ito. Maglagay ng bagong address sa pagpapadala at subukang muli.",
+        "address_province_blank": "Pumili ng estado \/ probinsya",
+        "address_province_invalid": "Pumili ng wastong estado \/ lalawigan",
+        "address_company_blank": "Maglagay ng pangalan ng kumpanya",
+        "address_company_too_long": "Masyadong mahaba ang pangalan ng kumpanya (maximum ay 255 character)",
+        "address_company_contains_emojis": "Hindi maaaring maglaman ng mga emoji ang kumpanya",
+        "address_company_contains_html_tags": "Ang kumpanya ay hindi maaaring maglaman ng mga HTML tag.",
+        "address_company_contains_mathematical_symbols": "Ang kumpanya ay hindi maaaring maglaman ng mga mathematical na simbolo",
+        "address_phone_blank": "Maglagay ng wastong numero ng telepono",
+        "address_phone_contains_emojis": "Hindi maaaring maglaman ng mga emoji ang numero ng telepono",
+        "address_phone_invalid": "Maglagay ng wastong numero ng telepono",
+        "address_zip_blank": "Maglagay ng ZIP \/ postal code",
+        "address_zip_too_long": "Ang ZIP \/ postal code ay masyadong mahaba (ang maximum ay 255 character)",
+        "address_zip_not_supported": "Hindi sinusuportahan ang lokasyong ito.",
+        "address_zip_invalid_for_country": "Maglagay ng wastong ZIP \/ postal code para sa %{country}",
+        "address_zip_invalid_for_province": "Maglagay ng wastong ZIP \/ postal code para sa %{province}",
+        "address_zip_invalid_for_country_and_province": "Maglagay ng wastong ZIP \/ postal code para sa %{province}, %{country}",
+        "address_zip_contains_emojis": "Ang ZIP \/ postal code ay hindi maaaring maglaman ng mga emoji",
+        "address_zip_contains_mathematical_symbols": "Ang ZIP \/ postal code ay hindi maaaring maglaman ng mga mathematical na simbolo",
+        "address_generic_blank": "Kinakailangang field",
+        "address_generic_invalid": "Di-wastong entry",
+        "address_generic_error": "Error sa field",
+        "credit_card_name_blank": "Ilagay ang iyong pangalan nang eksakto tulad ng nakasulat sa iyong card",
+        "credit_card_name_invalid": "Ilagay ang iyong pangalan nang eksakto tulad ng nakasulat sa iyong card",
+        "credit_card_number_invalid": "Maglagay ng wastong numero ng card",
+        "credit_card_expiry_invalid": "Maglagay ng wastong petsa ng pag-expire",
+        "credit_card_month_invalid": "Maglagay ng wastong buwan ng pag-expire",
+        "credit_card_year_invalid": "Maglagay ng wastong taon ng pag-expire",
+        "credit_card_start_invalid": "Maglagay ng wastong petsa ng pagsisimula ng card",
+        "credit_card_start_month_invalid": "Maglagay ng wastong buwan ng pagsisimula ng card",
+        "credit_card_start_year_invalid": "Maglagay ng wastong taon ng pagsisimula ng card",
+        "credit_card_number_blank": "Maglagay ng numero ng card",
+        "credit_card_verification_value_blank": "Ilagay ang CVV o security code sa iyong card",
+        "delivery_line_detail_changed": "Maaaring nagbago ang ilang detalye ng paghahatid. I-verify ang iyong paraan ng pagpapadala at subukang muli.",
+        "delivery_zone_not_found": "Ang tinukoy na zone ay hindi natagpuan sa tinukoy na bansa.",
+        "reduction_code_code_not_found": "Maglagay ng wastong discount code o gift card",
+        "reduction_code_discount_not_found": "Maglagay ng wastong discount code",
+        "reduction_code_gift_card_code_invalid": "Maglagay ng wastong gift card",
+        "reduction_code_gift_card_unusable": "Hindi ka maaaring gumamit ng gift card para bumili ng isa pang gift card",
+        "reduction_code_gift_cards_not_supported_with_deferred_purchase_options": "Ang mga gift card ay hindi suportado ng mga pagpipilian sa ipinagpaliban na pagbili.",
+        "shipping_line_phone_blank": "Maglagay ng numero ng telepono para magamit ang paraan ng paghahatid na ito",
+        "shipping_line_phone_invalid": "Maglagay ng wastong numero ng telepono",
+        "tips_invalid_tip_amount": "Maglagay ng tip na mas mababa sa %{amount}",
+        "gift_card_already_applied": "Nailapat na ang gift card na ito sa iyong order",
+        "gift_card_disabled": "Hindi na available ang gift card na ito",
+        "gift_card_expired": "Nag-expire na ang gift card na ito",
+        "gift_card_depleted": "Ang gift card na ito ay walang natitirang pondo",
+        "gift_card_currency_mismatch": "Tanging mga gift card sa %{checkout_currency} ang maaaring gamitin sa order na ito",
+        "gift_cards_not_supported_with_deferred_purchase_options": "Ang mga gift card ay hindi sinusuportahan ng mga opsyon sa ipinagpaliban na pagbili.",
+        "gift_card_buying_gift_card": "Hindi ka maaaring gumamit ng gift card para bumili ng isa pang gift card",
+        "payment_gateway_missing": "Pumili ng paraan ng pagbabayad.",
+        "payment_gateway_needs_paid_plan_error": "Ang paraan ng pagbabayad na ito ay hindi available sa tindahan sa ngayon",
+        "payment_gateway_not_in_test_mode": "ay hindi setup para subukan ang mga order. Ang tindahan na ito ay hindi maaaring tumanggap ng mga tunay na order o tunay na pagbabayad.",
+        "payment_gateway_incompatible_with_multi_currency": "Upang makumpleto ang pag-checkout na ito sa iyong lokal na pera, kailangan mong magbayad sa pamamagitan ng credit card.",
+        "payment_gateway_unsupported_for_subscriptions": "Hindi available ang paraan ng pagbabayad na ito para sa mga order ng subscription.",
+        "payment_gateway_unsupported_for_deferred_purchase_options": "Hindi available ang paraan ng pagbabayad na ito para sa mga opsyon sa ipinagpaliban na pagbili.",
+        "payment_gateway_unsupported_for_country": "Ang paraan ng pagbabayad na ito ay hindi available para sa iyong bansa sa pagpapadala.",
+        "payment_gateway_unsupported_for_development_store_html": "Upang maglagay ng isang pagsubok na order, kakailanganin mong gumamit ng isang pagsubok na gateway ng pagbabayad. Matuto nang higit pa tungkol sa <a href=\"%{docs_link}\">pagsubok ng mga order sa mga development store<\/a> .",
+        "payment_gateway_unsupported_for_order_above_maximum_orders_html": "Naabot mo na ang limitasyon para sa mga order ng development store gamit ang processor ng pagbabayad na ito. Upang maglagay ng isa pang order, kakailanganin mong gumamit ng gateway ng pagsubok sa pagbabayad. Matuto nang higit pa tungkol sa <a href=\"%{docs_link}\">pagsubok ng mga order sa mga development store<\/a> .",
+        "purchase_options_agreement_blank": "Upang magpatuloy sa iyong pagbili, sumang-ayon sa ipinagpaliban o umuulit na mga tuntunin sa pagbili.",
+        "physical_gift_card_invalid_quantity": "Ang mga line item ng pisikal na gift card ay dapat na may dami na tumutugma sa bilang ng mga code ng gift card.",
+        "physical_gift_card_duplicate_code": "Ang item sa linya ng pisikal na gift card ay naglalaman ng duplicate na code.",
+        "physical_gift_card_invalid_code": "Di-wasto ang code ng pisikal na gift card.",
+        "email_blank": "Maglagay ng email",
+        "phone_blank": "Maglagay ng numero ng telepono",
+        "address_country_invalid": "Pumili ng bansa\/rehiyon mula sa listahan",
+        "address_zip_invalid": "Maglagay ng wastong ZIP \/ postal code",
+        "gift_card_invalid": "Ang gift card na \"••••%{last_four_characters}\" ay hindi na wasto",
+        "vaulting_agreement_blank": "Upang magpatuloy, kailangan mong i-save ang iyong bagong credit card dahil ang pagbabayad para sa order na ito ay mangyayari sa ibang araw.",
+        "sms_marketing_phone_invalid": "Maglagay ng wastong numero ng telepono",
+        "address_suggestion_did_you_mean_html": "Ang ibig mo bang sabihin ay %{html}?"
+      },
+      "shop_policies": {
+        "refund_policy": "Patakaran sa refund",
+        "privacy_policy": "Patakaran sa privacy",
+        "terms_of_service": "Mga Tuntunin ng Serbisyo",
+        "legal_notice": "Legal na paunawa",
+        "shipping_policy": "Patakaran sa Pagpapadala",
+        "terms_of_sale": "Mga tuntunin ng pagbebenta",
+        "subscription_policy": "Patakaran sa subscription",
+        "purchase_options_policy": "Patakaran sa mga pagpipilian sa pagbili",
+        "contact_information": "Impormasyon sa pakikipag-ugnayan",
+        "purchase_options_cancellation_policy": "Patakaran sa pagkansela"
+      },
+      "mor_policies": {
+        "terms_and_conditions": "Mga Tuntunin at Kundisyon ng Merchant of Record",
+        "privacy_policy": "Patakaran sa Privacy ng Merchant of Record"
+      },
+      "markets": {
+        "invalid_market_manager_error": "Suriin ang iyong impormasyon sa pakikipag-ugnayan bago kumpletuhin ang pagbabayad"
+      },
+      "notifications": {
+        "title": "Mga abiso"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "Halagang babayaran para sa order na %{order_name}",
+        "changes_summary": {
+          "added": {
+            "one": "Idinagdag",
+            "other": "Idinagdag ang %{count}"
+          },
+          "removed": "Inalis",
+          "subtracted": "Inalis ang %{count}",
+          "returned": "Ibinalik ang %{count}",
+          "return_line_item_removed": "Inalis ang %{count} mula sa pagbabalik"
+        },
+        "additional_payment_requested": "Kailangan ang pagbabayad ng %{total_outstanding}.",
+        "checkout_review_and_pay": "Na-update ang iyong order na %{order_name}. Suriin ang mga pagbabagong ito, pagkatapos ay magbayad para kumpirmahin ang iyong order.",
+        "order_updated_on": "Na-update ang iyong order noong %{last_edited_at}.",
+        "order_review_and_pay": "Na-update ang iyong order. Suriin at magbayad para kumpirmahin ang iyong order.",
+        "pay_now": "Magbayad na"
+      },
+      "change_currency": {
+        "credit_card_will_be_charged_html": "Sisingilin ang iyong credit card ng %{amount}",
+        "payment_total_label": "Kabuuan ng bayad",
+        "change_currency_link": "Baguhin sa %{currency_name}",
+        "card_provider_fx_charges_warning": "Ang iyong card provider ay maaaring maningil ng mga bayarin sa %{currency_code} na mga transaksyon.",
+        "currency_not_supported_by_shop": "Hindi na available ang currency na iyong pinili. Ang lahat ng mga presyo ay nasa %{currency_code}."
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "Na-update ang iyong cart batay sa iyong bansa sa pagpapadala.",
+        "cart_and_currency_updated_based_on_country": "Ang iyong cart at pera ay na-update batay sa iyong bansa sa pagpapadala."
+      },
+      "change_cart_localization": {
+        "verify_shipping_address": "Na-update ang iyong bansa\/rehiyon. Ilagay ang iyong address sa pagpapadala upang magpatuloy sa pag-checkout."
+      },
+      "tips": {
+        "title": "Magdagdag ng tip",
+        "description": "Ipakita ang iyong suporta para sa koponan sa %{shop_name}",
+        "presets_description": "Pumili ng porsyento ng tip",
+        "custom_label": "Custom na tip",
+        "add_tip": "Magdagdag ng tip",
+        "update_tip": "I-update ang tip",
+        "message": "Salamat, pinahahalagahan namin ito.",
+        "no_tip_label": "wala"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "Bumili ng %{product_name}",
+          "one": "Bumili ng %{product_name} at %{count} pang item",
+          "other": "Bumili ng %{product_name} at %{count} iba pang mga item"
+        }
+      },
+      "subscriptions": {
+        "recurring_total_intervals": {
+          "day": {
+            "one": "araw",
+            "other": "%{count} na araw"
+          },
+          "week": {
+            "one": "linggo",
+            "other": "%{count} na linggo"
+          },
+          "month": {
+            "one": "buwan",
+            "other": "%{count} na buwan"
+          },
+          "year": {
+            "one": "taon",
+            "other": "%{count} taon"
+          }
+        },
+        "recurring_totals": "%{total_price} bawat %{interval}",
+        "recurring_totals_with_initial_order_shipping_discount": "Unang pagbabayad %{total_price_with_discount}, pagkatapos ay %{recurring_total}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "Unang pagbabayad %{total_price}",
+            "other": "Unang %{count} na mga pagbabayad %{total_price} bawat isa"
+          },
+          "following_cycles": ", pagkatapos ay %{total_price} bawat %{interval}"
+        },
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", pagkatapos ay %{count} pagbabayad sa %{total_price}",
+            "other": ", pagkatapos ay %{count} na mga pagbabayad sa %{total_price} bawat isa"
+          }
+        }
+      },
+      "customer_payment_methods": {
+        "page_title": "Mga paraan ng pagbabayad",
+        "title": "Mga paraan ng pagbabayad",
+        "update_card_button_label": "I-update ang card",
+        "delete_customer_mandate": {
+          "generic_error": "Nagkaroon ng isyu sa pagproseso ng iyong kahilingan.",
+          "success_message": "Ang iyong paraan ng pagbabayad ay matagumpay na natanggal"
+        }
+      },
+      "throttle": {
+        "too_many_attempts": {
+          "message": "Masyadong maraming mga pagtatangka",
+          "description": "Pakisubukang muli pagkalipas ng ilang minuto"
+        },
+        "line_to_check_out": "Nakapila ka para mag-check out",
+        "cart_summary_heading": "Ang iyong kariton",
+        "merchandise": {
+          "sold_out": "Ubos na"
+        },
+        "inventory": {
+          "partial_inventory_banner": "Naubos na ang bahagi ng iyong cart at hindi na mabibili sa pag-checkout.",
+          "sold_out": {
+            "heading": "Sold out na ang iyong cart",
+            "storefront_body": "Bumalik sa tindahan upang ipagpatuloy ang pamimili",
+            "no_storefront_body": "Sa kasamaang palad, ang item na gusto mong bilhin ay hindi na magagamit.",
+            "link": "Bumalik sa tindahan"
+          }
+        },
+        "title": "Nakapila",
+        "time_to_checkout_title": "Oras na para mag-check out - {{shopName}}",
+        "estimated_wait_time": {
+          "calculating": "Kinakalkula ang tinantyang oras ng paghihintay",
+          "less_than_one": "Tinantyang oras ng paghihintay: Wala pang isang minuto",
+          "one": "Tinantyang oras ng paghihintay: {{count}} minuto",
+          "other": "Tinantyang oras ng paghihintay: {{count}} minuto"
+        },
+        "last_checked": "(Huling nasuri: {{time}} )",
+        "footer": {
+          "heading": "Huwag i-refresh ang page na ito, awtomatiko itong mag-a-update.",
+          "body": "Ang mga item sa iyong cart ay hindi nakalaan hanggang sa makumpleto mo ang pag-checkout."
+        }
+      },
+      "cart_checkout_validation": {
+        "runtime_error": "Nagkaroon ng isyu sa pagproseso ng iyong kahilingan, mangyaring makipag-ugnayan sa may-ari ng tindahan."
+      },
+      "no_address_location": {
+        "title": "Lokasyon na walang address",
+        "header": "Wala kang address sa pagpapadala para sa lokasyong ito",
+        "alt_header": "Nawawala ang address ng pagpapadala",
+        "message": "Makipag-ugnayan sa amin upang magdagdag ng address para sa lokasyong ito upang makumpleto ang pag-checkout.",
+        "email_us_button_label": "Padalhan kami ng email"
+      },
+      "order_errors": {
+        "creation_failure": "Nagkaroon ng isyu sa paggawa ng iyong order. Subukang muli, o makipag-ugnayan sa amin para sa higit pang mga detalye.",
+        "network_failure": "Hindi maisumite ang iyong order dahil sa isang error sa network. Suriin ang iyong koneksyon at subukang muli.",
+        "inventory_reservation_failure": "Ang ilang mga item ay hindi na magagamit."
+      },
+      "session_errors": {
+        "session_not_unique": "Nagkaroon ng problema sa pagproseso ng iyong order. I-refresh ang page na ito para bumalik sa store.",
+        "session_already_finished": "Naisumite na ang order na ito. Maaari kang bumalik sa tindahan upang magsimula ng bagong order."
+      },
+      "pickup_point": {
+        "location_is_currently_closed": "sarado",
+        "business_hours": "Mga oras ng pagbubukas",
+        "no_business_hours": "Walang available na oras ng pagbubukas",
+        "open_twenty_four_hours": "Bukas 24\/7",
+        "or": "o",
+        "search_button": "Maghanap",
+        "selector_tabs": "Tagapili ng pickup point",
+        "selector_tab_map": "Mapa",
+        "selector_tab_list": "Listahan",
+        "could_not_resolve_address": "Hindi mahanap ang iyong address. Subukang muli o gumamit ng ibang address",
+        "no_pickup_points_near_you": "Walang nakitang mga pickup point malapit sa napiling address",
+        "no_pickup_points_near_location": "Walang nakitang mga pickup point malapit sa iyong lokasyon",
+        "no_pickup_points_found": "Walang nakitang mga pickup point",
+        "paginator": {
+          "next_accessibility_label": "Susunod na pahina",
+          "previous_accessibility_label": "Nakaraang pahina",
+          "header": {
+            "one": "Ipinapakita ang %{first} - %{last} ng %{count} point",
+            "other": "Ipinapakita ang %{first} - %{last} ng %{count} na puntos"
+          },
+          "selected_pickup_point_label": {
+            "one": "%{pickup_point_index} ng %{count} point",
+            "other": "%{pickup_point_index} ng %{count} puntos"
+          },
+          "selected_page": {
+            "one": "%{first} - %{last} ng %{count} point"
+          }
+        },
+        "number_of_pickup_points_near_location": {
+          "one": "%{count} pickup point malapit sa iyong lokasyon",
+          "other": "%{count} pickup point malapit sa iyong lokasyon"
+        },
+        "change": "Baguhin",
+        "waiting_on_pickup_point_location_notice": "Naghahanap ng mga pickup point...",
+        "geolocation": {
+          "shared_location_button": "Gamitin ang aking lokasyon",
+          "errors": {
+            "unsuported_by_browser": "Ang pagkuha ng geolocation ay hindi sinusuportahan ng iyong browser. Subukang muli o gumamit ng ibang browser.",
+            "permission_not_allowed": "Payagan ang pagbabahagi ng iyong lokasyon.",
+            "permission_denied": "Hindi makuha ang iyong lokasyon. Subukan muli."
+          }
+        }
+      },
+      "error_page": {
+        "terminal": {
+          "title": "Nagkaroon ng problema sa aming pag-checkout",
+          "message": "I-refresh ang page na ito o subukang muli sa loob ng ilang minuto",
+          "action": {
+            "cta": "I-refresh ang Pahina"
+          },
+          "request_id": "Request ID: {{requestId}}"
+        }
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "Bumalik sa cart",
+        "return_to_cart_to_update_quantities": "%{return_to_cart_link_text} upang i-update ang mga dami",
+        "subscription_changed": "Nagbago ang isa sa iyong mga subscription.",
+        "company_location_changed": "Na-update na ang iyong cart. Suriin ang iyong order bago ito isumite.",
+        "company_location_changed_product_removed": "Na-update ang iyong cart dahil hindi available ang ilang produkto sa lokasyong ito. Suriin ang iyong order bago ito isumite.",
+        "violations_title": "{{violation}} ay nawawala o hindi wasto",
+        "individual_violations_title": {
+          "DeliveryViolations": "Address ng pagpapadala",
+          "OtherViolations": "Impormasyon ng Order",
+          "UnhandledViolations": "Impormasyon ng Order"
+        },
+        "all_violations_content": "Tumawag o {{emailLink}} sa amin upang i-update ang impormasyong ito at kumpletuhin ang iyong order:",
+        "editable_shipping_address_violations_message_title": "Idagdag ang impormasyong ito upang makumpleto ang iyong order:",
+        "editable_shipping_address_violations_message_footer": "Upang permanenteng i-update ang address para sa lokasyong ito, {{emailLink}} .",
+        "editable_shipping_address_violations_email_link": "Makipag-ugnayan sa amin",
+        "shipping_address_incomplete_title": "Hindi kumpleto ang address ng pagpapadala",
+        "calculating_shipping": "Kinakalkula pa ang pagpapadala. Subukang muli sa loob ng ilang segundo. Hindi ka pa sinisingil.",
+        "calculating_taxes": "Kinakalkula pa rin ang mga buwis. Subukang muli sa loob ng ilang segundo. Hindi ka nasingil."
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "Pagsusuri",
+          "link_label": "{{partnerDisplayName}} Mga Tuntunin at Kundisyon"
+        }
+      },
+      "online_store_chat": {
+        "title": "Mga tanong? Makipag-usap ka sa amin"
+      },
+      "local_pickup": {
+        "location_information": {
+          "one": "Mayroong %{count} na tindahan na may stock na malapit sa %{address}",
+          "other": "Mayroong %{count} na tindahan na may stock na malapit sa %{address}"
+        },
+        "toggle_location": "Baguhin ang aking lokasyon",
+        "or": "O",
+        "cancel": "Kanselahin",
+        "your_location": "iyong lokasyon",
+        "search_button": "Maghanap ng mga tindahan",
+        "no_stores_found": "Walang nakitang mga tindahan",
+        "could_not_resolve_address": "Hindi mahanap ang iyong address. Subukang muli o gumamit ng ibang address",
+        "paginator": {
+          "accessibility_label": "Pagbilang ng lokal na pickup",
+          "previous": "Nakaraang pahina",
+          "next": "Susunod na pahina"
+        },
+        "reveal_more_label": {
+          "one": "Magpakita ng %{count} pang lokasyon",
+          "other": "Magpakita ng %{count} pang lokasyon"
+        }
+      },
+      "captcha": {
+        "title": "Kumpletuhin ang CAPTCHA upang magpatuloy",
+        "errors": {
+          "not_solved": "Kumpletuhin ang CAPTCHA upang magpatuloy"
+        }
+      },
+      "discount_errors": {
+        "generic_error": "Hindi maproseso ang iyong order dahil hindi na available ang iyong discount code. Suriin ang kabuuan ng iyong order at subukang muli."
+      },
+      "shop_pay_external": {
+        "errors": {
+          "problem_loading": "May problema sa paglo-load ng Shop Pay",
+          "try_again_later": "Suriin ang iyong koneksyon o isara ang window na ito at subukang muli sa ilang sandali.",
+          "checkout_has_expired": "Nag-expire na ang iyong pag-checkout. Isara ang window na ito at subukang tumingin muli mula sa {{shopName}} ."
+        },
+        "return_to_store": "Bumalik sa {{shopName}}"
       }
     },
     "pagination": {
