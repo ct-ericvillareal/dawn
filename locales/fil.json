@@ -109,6 +109,65 @@
             "delivery_strategy_conditions_not_satisfied": "Available ang mga diskarte sa paghahatid para sa lokasyong ito, ngunit hindi nasiyahan ang kanilang mga kundisyon.",
             "out_of_stock_at_origin_location": "Walang stock sa pinanggalingang lokasyon."
           }
+        },
+        "continue_to_payment_plans_button_label": "Magpatuloy sa mga plano sa pagbabayad",
+        "back_button_label": "Bumalik",
+        "choose_delivery_strategy": "Pumili ng paraan ng paghahatid",
+        "autocomplete_zero_item": "Walang available na item",
+        "autocomplete_powered_by_google": "Pinapatakbo ng {{brandName}}",
+        "submit": "Ipasa",
+        "processing": "Pinoproseso…",
+        "stepper": {
+          "increase": "Dagdagan {{type}}",
+          "decrease": "Bawasan ang {{type}}",
+          "minimum_reached": "Naabot na ang minimum na {{value}}",
+          "maximum_reached": "Naabot na ang maximum na {{value}}"
+        },
+        "remove_item": "Alisin ang %{label}",
+        "remove_tag": "Alisin ang tag",
+        "dates": {
+          "weekdays": {
+            "monday": "Lunes",
+            "tuesday": "Martes",
+            "wednesday": "Miyerkules",
+            "thursday": "Huwebes",
+            "friday": "Biyernes",
+            "saturday": "Sabado",
+            "sunday": "Linggo"
+          },
+          "weekdays_abbreviation": {
+            "wednesday": "Kami",
+            "friday": "Sinabi ni Fr"
+          },
+          "months": {
+            "january": "Enero",
+            "february": "Pebrero",
+            "march": "Marso",
+            "april": "Abril",
+            "june": "Hunyo",
+            "july": "Hulyo",
+            "august": "Agosto",
+            "september": "Setyembre",
+            "october": "Oktubre",
+            "november": "Nobyembre",
+            "december": "Disyembre"
+          }
+        },
+        "datepicker": {
+          "show_previous_month": "Ipakita ang nakaraang buwan, {{month}} {{year}}",
+          "show_next_month": "Ipakita sa susunod na buwan, {{month}} {{year}}",
+          "range_start": "Simula ng saklaw",
+          "in_range": "Nasa hanay",
+          "range_end": "dulo ng saklaw"
+        },
+        "map": {
+          "cluster_title": {
+            "one": "Cluster ng {{number}} marker",
+            "other": "Cluster ng {{number}} marker"
+          }
+        },
+        "sheet": {
+          "expand": "Palawakin"
         }
       },
       "order_summary": {
@@ -650,7 +709,46 @@
         "different_shipping_address_text": "Gumamit ng isang beses na address para sa order na ito",
         "change_company_location_link_label": "Baguhin ang lokasyon ng kumpanya",
         "change_location_link_label": "Baguhin ang lokasyon",
-        "ship_to_company": "Ipadala sa {{companyName}}"
+        "ship_to_company": "Ipadala sa {{companyName}}",
+        "title": "Impormasyon",
+        "shipping_used_as_billing_notice": "Gagamitin din ito bilang iyong billing address para sa order na ito.",
+        "delivery_option_title": "Paraan ng paghahatid",
+        "contact_method_title": "Makipag-ugnayan",
+        "email_or_phone_label": "Email o numero ng mobile phone",
+        "email_or_phone_placeholder": "Email o numero ng mobile phone",
+        "stored_addresses_label": "Mga naka-save na address",
+        "new_address_label": "Gumamit ng bagong address",
+        "first_name_label": "Pangalan",
+        "optional_first_name_label": "Pangalan (opsyonal)",
+        "last_name_label": "Huling pangalan",
+        "company_label": "kumpanya",
+        "company_attention_label": "Kumpanya\/Atensyon",
+        "optional_company_attention_label": "Kumpanya\/Atensyon (opsyonal)",
+        "optional_company_label": "Kumpanya (opsyonal)",
+        "address2_label": "Apartment, suite, atbp.",
+        "optional_address2_label": "Apartment, suite, atbp. (opsyonal)",
+        "city_label": "lungsod",
+        "country_label": "Bansa\/Rehiyon",
+        "country_code": "Code ng bansa\/rehiyon",
+        "province_label": "Lalawigan",
+        "province_placeholder": "Lalawigan",
+        "state_label": "Estado",
+        "state_placeholder": "Estado",
+        "region_label": "Rehiyon",
+        "region_placeholder": "Rehiyon",
+        "region_none": "Walang napili",
+        "governorate_label": "Gobernadora",
+        "governorate_placeholder": "Gobernadora",
+        "emirate_label": "emirate",
+        "emirate_placeholder": "emirate",
+        "state_and_territory_label": "Estado\/teritoryo",
+        "state_and_territory_placeholder": "Estado\/teritoryo",
+        "phone_label": "Telepono",
+        "optional_phone_label": "Telepono (opsyonal)",
+        "phone_placeholder": "Telepono",
+        "phone_tooltip": "Kung sakaling kailangan naming makipag-ugnayan sa iyo tungkol sa iyong order",
+        "pincode_label": "Pin code",
+        "pincode_placeholder": "Pin code"
       },
       "delivery_options": {
         "free_total_label": "Libre",
