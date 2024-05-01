@@ -1293,7 +1293,39 @@
         "description": "Nagkaroon ng problema sa pag-update ng iyong address. Subukang i-refresh ang page na ito o tingnan ang iyong koneksyon sa internet."
       },
       "load_orders_error": {
-        "title": "Hindi ma-load ang mga order"
+        "title": "Hindi ma-load ang mga order",
+        "description": "Subukan muli o bumalik mamaya.",
+        "retry_button": "Subukan muli"
+      },
+      "load_paypal_error": {
+        "description": "May problema sa pag-load ng PayPal. Pakisubukang muli."
+      },
+      "logout_everywhere": {
+        "description": "Nagkaproblema sa pag-log out. Pakisubukang muli."
+      },
+      "no_access": {
+        "back_to_authentication_link": "Mag-log in sa ibang account",
+        "description": "Hindi ka nakarehistro bilang B2B customer sa {{shopName}}",
+        "title": "Walang access"
+      },
+      "no_access_to_locations": {
+        "description": "Wala kang access sa anumang mga lokasyon"
+      },
+      "not_found": {
+        "description": "Suriin ang URL o subukang muli sa loob ng ilang minuto.",
+        "title": "May problema sa paglo-load ng page na ito"
+      },
+      "order_not_found": {
+        "description": "Wala ang order na ito o wala kang pahintulot na tingnan ito.",
+        "title": "Hindi nakita ang order"
+      },
+      "profile_update_error": {
+        "description": "Nagkaroon ng problema sa pag-update ng iyong profile. Subukang i-refresh ang page na ito o tingnan ang iyong koneksyon sa internet."
+      },
+      "retry_action_label": "Subukan muli",
+      "load_extension_error": {
+        "description": "I-refresh ang page na ito o subukang muli sa loob ng ilang minuto.",
+        "refresh_button": "I-refresh ang page"
       }
     },
     "account_information": {
@@ -1309,6 +1341,106 @@
         }
       },
       "add_button": "Idagdag"
+    },
+    "payment_methods": {
+      "title": "Mga paraan ng pagbabayad",
+      "add_payment_method_button": "Magdagdag ng paraan ng pagbabayad",
+      "add_payment_method_banner": "Magdagdag ng paraan ng pagbabayad para sa mas mabilis na pag-checkout o mga paunang awtorisadong serbisyo",
+      "no_payment_methods_banner": "Walang idinagdag na paraan ng pagbabayad",
+      "edit_payment_method_button_accessibility_label": "I-edit {{paymentMethodName}} na nagtatapos sa {{lastDigits}}",
+      "edit_payment_method_brand_button_accessibility_label": "I-edit {{paymentMethodName}}",
+      "delete_payment_method_button": "Tanggalin",
+      "delete_payment_method_button_accessibility_label": "Tanggalin {{paymentMethodName}}",
+      "back_button": "Bumalik",
+      "back_button_accessibility_label": "Bumalik sa {{paymentMethodStepTitle}}",
+      "expiration_warning_button_accessibility_label": "Ipakita ang babala sa pag-expire para sa {{paymentMethodName}} na nagtatapos sa {{lastDigits}}",
+      "expires_soon": "Malapit nang mag-expire ang card na ito",
+      "expired": "Ang card na ito ay nag-expire na",
+      "card_update_consent": "Ise-save ang paraan ng pagbabayad na ito para sa mga pagbili sa hinaharap.",
+      "credit_or_debit_card_title": "Credit o debit card",
+      "google_pay": {
+        "loading": "Nilo-load ang Google Pay",
+        "errors": {
+          "generic": "Nagkaroon ng problema sa Google Pay. Subukang muli o gumamit ng ibang paraan ng pagbabayad.",
+          "missing_billing_address": "Nangangailangan ang Google Pay ng billing address. Mangyaring magdagdag ng isa sa iyong account."
+        }
+      },
+      "apple_pay": {
+        "loading": "Nilo-load ang Apple Pay",
+        "errors": {
+          "generic": "Nagkaroon ng problema sa Apple Pay. Subukang muli o gumamit ng ibang paraan ng pagbabayad.",
+          "not_available": "Hindi available ang Apple Pay sa device na ito.",
+          "missing_billing_address": "Nangangailangan ang Apple Pay ng billing address. Mangyaring magdagdag ng isa sa iyong account."
+        }
+      },
+      "payment_details": {
+        "title": "Mga detalye ng paraan ng pagbabayad",
+        "credit_card_details_accessibility_label": "nagtatapos sa {{lastDigits}}",
+        "card_info_title": "Impormasyon sa card",
+        "payment_method_expiring_on": "Mag-e-expire sa {{expiryDate}}",
+        "payment_method_expired_on": "Nag-expire noong {{expiryDate}}",
+        "preauthorized_payments": "Paunang awtorisadong pagbabayad",
+        "close_payment_modal": "Isara",
+        "close_payment_modal_accessibility_label": "Isara ang modal ng mga detalye ng paraan ng pagbabayad",
+        "payment_method_not_found_error": "Hindi mahanap ang paraan ng pagbabayad",
+        "payment_details_loading": "Nilo-load ang mga detalye ng paraan ng pagbabayad",
+        "pre_authorized_payments": "Mga paunang awtorisadong pagbabayad",
+        "total_amount_of_subscription_line_items_left": "at {{total}} pa",
+        "total_amount_of_subscription_line_items_left_accessibility_label": "{{totalItems}} item sa kabuuan, nagpapakita ng {{totalItemsToDisplay}} item.",
+        "next_payment_due": "Ang susunod na pagbabayad ay dapat bayaran {{dueDateInMonthDayYear}}",
+        "edit_payment_method_button": "I-edit",
+        "edit_payment_method_button_accessibility_label": "I-edit ang paraan ng pagbabayad na nagtatapos sa {{lastDigits}}",
+        "loading_shop_pay": "Naglo-load ng Shop Pay",
+        "invalid_payment_method": "Di-wastong paraan ng pagbabayad",
+        "invalid_payment_method_message": "Gumamit ng bagong credit card para patuloy na makatanggap ng mga paparating na order.",
+        "replace_payment_method": "Palitan ang paraan ng pagbabayad",
+        "checkout_card_banner": "Magagamit lang ang paraan ng pagbabayad na ito para sa mga pre-authorized na pagbabayad. Hindi ito lilitaw sa pag-checkout kung naka-log in ka sa tindahang ito.",
+        "default_checkbox": "Itakda bilang default",
+        "default_checkbox_accessibility_label": "Itakda ang paraan ng pagbabayad na ito bilang default"
+      },
+      "edit_payment_method": {
+        "title": "I-edit ang paraan ng pagbabayad",
+        "save_payment_method_button": "I-save",
+        "cancel_edit_payment_method_button": "Kanselahin",
+        "payment_method_updated_toast": "Na-update ang paraan ng pagbabayad",
+        "billing_address_add_new": "Magdagdag ng bago",
+        "billing_address_choose_from_list": "Pumili sa listahan",
+        "future_purchases_notice": "Ise-save ang paraan ng pagbabayad na ito para sa mga pagbili sa hinaharap.",
+        "generic_error": "Nagkaroon ng problema sa pag-update. Pakisubukang muli."
+      },
+      "card_fields": {
+        "card_number_label": "Numero ng card",
+        "card_number_placeholder": "Numero ng card",
+        "name_on_card_label": "pangalan sa card",
+        "name_on_card_placeholder": "pangalan sa card",
+        "card_expiry_label": "Petsa ng pag-expire (MM \/ YY)",
+        "card_expiry_placeholder": "Petsa ng pag-expire (MM \/ YY)",
+        "card_start_label": "Petsa ng isyu (MM \/ YY)",
+        "card_start_placeholder": "Petsa ng isyu (MM \/ YY)",
+        "tooltip": {
+          "tooltip_accessibility_label": "Karagdagang informasiyon",
+          "card_verification_value_explanation_amex": "4-digit na security code sa harap ng iyong card",
+          "card_verification_value_explanation_other": "3-digit na security code sa likod ng iyong card",
+          "card_verification_value_explanation": "Karaniwang makikita ang 3-digit na security code sa likod ng iyong card. Ang mga American Express card ay may 4 na digit na code na matatagpuan sa harap.",
+          "card_security_notice": "Ang lahat ng mga transaksyon ay ligtas at naka-encrypt."
+        },
+        "field_errors": {
+          "credit_card_name_invalid": "Ilagay ang iyong pangalan nang eksakto tulad ng nakasulat sa iyong card",
+          "credit_card_number_invalid": "Maglagay ng wastong numero ng card",
+          "credit_card_expiry_invalid": "Maglagay ng wastong petsa ng pag-expire ng card",
+          "credit_card_verification_value_blank": "Ilagay ang CVV o security code sa iyong card"
+        }
+      },
+      "payment_delete": {
+        "title": "Tanggalin ang paraan ng pagbabayad",
+        "description_without_replacement": "Hindi na magiging available ang paraan ng pagbabayad na ito para sa mga pagbili sa hinaharap.",
+        "description_with_replacement": "Ang pagtanggal sa paraan ng pagbabayad na ito ay makakaapekto sa mga preauthorized na pagbabayad. Maaari mo itong opsyonal na palitan ng ibang paraan ng pagbabayad upang patuloy na makatanggap ng mga paparating na order.",
+        "warning_message_with_replacement": {
+          "with_pending_orders_and_subscriptions": "Ang pagtanggal sa paraan ng pagbabayad na ito ay makakaapekto sa mga preauthorized na pagbabayad. Maliban kung pipili ka ng alternatibong paraan ng pagbabayad, ang paraan ng pagbabayad na ito ay sisingilin pa rin para sa anumang natitirang balanse sa mga umiiral nang order. Ang pagpili ng alternatibong paraan ng pagbabayad ay magbibigay-daan sa iyong makatanggap ng paparating na mga order ng subscription nang walang pagkaantala.",
+          "with_pending_orders": "Ang pagtanggal sa paraan ng pagbabayad na ito ay mag-aalis nito sa iyong account at hindi na magiging available para sa mga pagbili sa hinaharap. Maliban kung pipili ka ng alternatibong paraan ng pagbabayad, sisingilin pa rin ito para sa anumang natitirang balanse sa mga umiiral nang order.",
+          "with_subscriptions": "Ang pagtanggal sa paraan ng pagbabayad na ito ay makakaapekto sa mga preauthorized na pagbabayad. Palitan ito ng alternatibong paraan ng pagbabayad para patuloy na makatanggap ng mga paparating na order."
+        }
+      }
     }
   },
   "sections": {
@@ -1433,6 +1565,98 @@
       "page": "{{ number }}",
       "next": "Susunod na pahina",
       "previous": "Nakaraang pahina"
+    }
+  },
+  "customer": {
+    "login_page": {
+      "forgot_password": "Nakalimutan ang iyong password?",
+      "guest_continue": "Magpatuloy",
+      "guest_title": "Magpatuloy bilang panauhin",
+      "title": "Mag log in",
+      "sign_in": "Mag-sign in",
+      "submit": "Ipasa",
+      "alternate_provider_separator": "o"
+    },
+    "order": {
+      "title": "Order {{ name }}",
+      "date_html": "Inilagay sa {{ date }}",
+      "cancelled_html": "Kinansela ang Order noong {{ date }}",
+      "cancelled_reason": "Dahilan: {{ reason }}",
+      "billing_address": "Address ng Pagsingil",
+      "payment_status": "Katayuan ng Pagbabayad",
+      "shipping_address": "Address ng Pagpapadala",
+      "fulfillment_status": "Katayuan ng Katuparan",
+      "discount": "Diskwento",
+      "shipping": "Pagpapadala",
+      "tax": "Buwis",
+      "product": "produkto",
+      "price": "Presyo",
+      "quantity": "Dami",
+      "total": "Kabuuan",
+      "total_refunded": "Na-refund",
+      "fulfilled_at_html": "Natupad {{ date }}",
+      "track_shipment": "Subaybayan ang pagpapadala",
+      "tracking_url": "Link sa pagsubaybay",
+      "tracking_company": "Tagapagdala",
+      "tracking_number": "Bilang na palatandaan",
+      "total_duties": "Mga tungkulin"
+    },
+    "orders": {
+      "title": "History ng order",
+      "order_number": "Umorder",
+      "order_number_link": "Numero ng order {{ number }}",
+      "date": "Petsa",
+      "payment_status": "Katayuan ng pagbabayad",
+      "fulfillment_status": "Katayuan ng katuparan",
+      "total": "Kabuuan",
+      "none": "Hindi ka pa nakakapag-order."
+    },
+    "recover_password": {
+      "title": "I-reset ang iyong password",
+      "subtext": "Padadalhan ka namin ng email para i-reset ang iyong password",
+      "success": "Nagpadala kami sa iyo ng email na may link para i-update ang iyong password."
+    },
+    "register": {
+      "title": "Gumawa ng account",
+      "first_name": "Pangalan",
+      "last_name": "Huling pangalan",
+      "submit": "Lumikha"
+    },
+    "reset_password": {
+      "title": "I-reset ang password ng account",
+      "subtext": "Maglagay ng bagong password",
+      "password_confirm": "Kumpirmahin ang password",
+      "submit": "I-reset ang password"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "how_to_use_gift_card": "Gamitin ang gift card code online o QR code sa tindahan",
+      "title": "Narito ang iyong {{ value }} balanse ng gift card para sa {{ shop }} !",
+      "subtext": "Ang iyong gift card",
+      "gift_card_code": "Code ng gift card",
+      "shop_link": "Bisitahin ang online na tindahan",
+      "add_to_apple_wallet": "Idagdag sa Apple Wallet",
+      "qr_image_alt": "QR code — i-scan upang kunin ang gift card",
+      "copy_code": "Kopyahin ang code ng gift card",
+      "expiration_date": "Mag-e-expire {{ expires_on }}",
+      "copy_code_success": "Matagumpay na nakopya ang code",
+      "expired": "Nag-expire na"
+    }
+  },
+  "recipient": {
+    "form": {
+      "checkbox": "Gusto kong ipadala ito bilang regalo",
+      "expanded": "Pinalawak ang form ng tatanggap ng gift card",
+      "collapsed": "Na-collapse ang form ng tatanggap ng gift card",
+      "email_label": "Email ng tatanggap",
+      "email_label_optional_for_no_js_behavior": "Email ng tatanggap (opsyonal)",
+      "name_label": "Pangalan ng tatanggap (opsyonal)",
+      "name": "Pangalan",
+      "message_label": "Mensahe (opsyonal)",
+      "message": "Mensahe",
+      "max_characters": "{{ max_chars }} (na) character max",
+      "send_on_label": "Ipadala sa (opsyonal)"
     }
   }
 }
