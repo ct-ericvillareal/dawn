@@ -758,7 +758,52 @@
             "other": "Para sa unang %{count} order"
           }
         },
-        "one_time_purchase_shipping": "Isang beses na pagpapadala"
+        "one_time_purchase_shipping": "Isang beses na pagpapadala",
+        "duties_and_taxes_title": "Tungkulin at mga buwis",
+        "shipping_information_required_notice": "Kinakailangan ang impormasyon sa pagpapadala. {{link}} .",
+        "shipping_information_redirect_link": "Ilagay ang iyong impormasyon dito",
+        "loading_progressive_rates": "Naghahanap ng higit pang mga rate…",
+        "no_other_methods_available": "Walang ibang paraan na magagamit",
+        "duties_and_taxes_options": {
+          "ddu_title": "Magbayad sa paghahatid",
+          "ddu_caption": "Maaaring may mga karagdagang bayad",
+          "ddp_title": "Magbayad na",
+          "ddp_caption": "Walang karagdagang bayad sa paghahatid"
+        },
+        "shipping_method_combinations": {
+          "combination": "%{rest} at %{current}"
+        },
+        "shipping_used_as_billing_notice": "Gagamitin din ito bilang iyong billing address para sa order na ito.",
+        "address_update": "I-update ang address",
+        "enter_address_manually_label": "Manu-manong ilagay ang address",
+        "shipping_address_title": "Ipadala sa",
+        "add_address": "Gumamit ng ibang address",
+        "add_delivery_instructions": "Magdagdag ng mga tagubilin sa paghahatid",
+        "edit": "I-edit",
+        "delete": "Tanggalin",
+        "address_more": "Higit pang mga pagkilos para sa address na ito",
+        "address_edit": "I-edit ang address",
+        "address_delete": "Tanggalin ang address",
+        "address_confirm": "Sigurado ka bang gusto mong tanggalin ang address na ito mula sa iyong account?",
+        "address_default": "Itakda bilang default",
+        "address_form": {
+          "add_address": "Magdagdag ng address",
+          "save": "I-save",
+          "cancel": "Kanselahin",
+          "generic_error": "Nagkaroon ng problema sa pag-save ng iyong address. Pakisubukang muli.",
+          "one_time_address_subtitle": "Gumamit ng isang beses na address para sa order na ito"
+        },
+        "different_shipping_method_summary": "Maglagay ng ibang address sa pagpapadala upang tingnan ang mga available na paraan ng pagpapadala",
+        "invalid_shipping_method_summary": "Maglagay ng wastong address sa pagpapadala upang tingnan ang mga available na paraan ng pagpapadala",
+        "method_summary": {
+          "incomplete_address_entered": "Maglagay ng kumpletong address sa pagpapadala upang tingnan ang mga available na paraan ng pagpapadala",
+          "incomplete_address_selected": "Pumili ng kumpletong address sa pagpapadala para makita ang mga available na paraan ng pagpapadala"
+        },
+        "local_pickup": {
+          "search_address": "Maghanap ng address",
+          "rollup_title": "Lokasyon ng pickup"
+        },
+        "missing_shipping_address": "Nawawala ang address ng pagpapadala"
       },
       "contact": {
         "civic_number_warning": "Magdagdag ng numero ng bahay kung mayroon ka",
@@ -1423,6 +1468,71 @@
           "processing": "Pinoproseso…",
           "submit": "Ipasa"
         }
+      },
+      "localized_fields": {
+        "additional_information": {
+          "title": "Karagdagang impormasyon"
+        }
+      },
+      "payment": {
+        "amazon_payments_login_hint": "Hihilingin sa iyo na mag-login gamit ang Amazon.",
+        "amazon_payments_logout": "Mag-log out mula sa Amazon Pay",
+        "amazon_payments_failed_mfa_challenge": "Hindi magamit ang napiling paraan ng pagbabayad. Pumili ng ibang paraan o makipag-ugnayan sa iyong bangko o tagabigay ng card.",
+        "amazon_payments_abandoned_mfa_challenge": "Hindi makumpleto ang iyong pagbabayad. Subukan ang ibang paraan ng pagbabayad o makipag-ugnayan sa iyong bangko o tagabigay ng card.",
+        "amazon_payments_could_not_enqueue_authorize": "Nagkaroon ng isyu sa pagproseso ng iyong pagbabayad. Subukang muli o gumamit ng ibang paraan ng pagbabayad.",
+        "title": "Pagbabayad",
+        "amount_left_to_pay_label": "Dapat bayaran:",
+        "discount_button_action_label": "Ilapat ang Discount Code",
+        "gift_card_code_label": "Code ng gift card",
+        "apply_gift_card_button_label": "Mag-apply",
+        "gift_card_balance_label": "Balanse:",
+        "supported_card_brands_more_label": "at iba pa…",
+        "detected_card_brand": "Natukoy na brand ng card: {brand}",
+        "credit_card_vaulting_sign_in_banner_title": "I-save ang iyong credit card",
+        "credit_card_vaulting_sign_in_banner_info": "Mag-log in o lumikha ng isang account upang i-save ang iyong credit card para sa mga pagbili sa hinaharap.",
+        "credit_card_vaulting_sign_in_banner_button_label": "Mag log in",
+        "ftd_vault_credit_card_label": "I-save ang credit card na ito sa aking account para sa mas mabilis na pag-checkout",
+        "card_number_label": "Numero ng card",
+        "card_number_placeholder": "Numero ng card",
+        "card_pay_with": "Magbayad gamit ang:",
+        "card_security_notice": "Ang lahat ng mga transaksyon ay ligtas at naka-encrypt.",
+        "card_security_vault_notice": "Kailangan namin ang iyong mga detalye para sa mga pagbabayad sa hinaharap. Ang lahat ng mga transaksyon ay ligtas at naka-encrypt.",
+        "card_information_notice": "Ang lahat ng mga transaksyon ay ligtas at naka-encrypt. Ang impormasyon ng credit card ay hindi kailanman iniimbak.",
+        "name_on_card_label": "pangalan sa card",
+        "name_on_card_placeholder": "pangalan sa card",
+        "card_nickname_label": "Palayaw (opsyonal)",
+        "card_expired": "Nag-expire na",
+        "card_expiry_label": "Petsa ng pag-expire (MM \/ YY)",
+        "card_expiry_placeholder": "Petsa ng pag-expire (MM \/ YY)",
+        "credit_card_start_month": "Simula buwan",
+        "credit_card_start_year": "Simula taon",
+        "delete_customer_mandate_modal_title": "Alisin ang card sa pagbabayad na ito?",
+        "delete_customer_mandate_modal_body": "Kung aalisin mo ang card na ito, kakailanganin mong idagdag itong muli bago ito gamitin para sa mga pagbabayad.",
+        "delete_customer_mandate_modal_confirm": "Alisin ang card",
+        "delete_customer_mandate_modal_cancel": "Kanselahin",
+        "card_verification_confirm": "Para sa mga layunin ng pag-verify, ilagay ang code ng seguridad ng iyong card.",
+        "card_expiry_date_explanation": "Petsa ng pag-expire ng card sa format: buwan, buwan, taon, taon",
+        "card_expiration_month_label": "Buwan ng pag-expire",
+        "card_expiration_year_label": "Taon ng pag-expire",
+        "card_verification_value_explanation": "Karaniwang makikita ang 3-digit na security code sa likod ng iyong card. Ang mga American Express card ay may 4 na digit na code na matatagpuan sa harap.",
+        "card_verification_value_explanation_amex": "4-digit na security code sa harap ng iyong card",
+        "card_verification_value_explanation_other": "3-digit na security code sa likod ng iyong card",
+        "card_start_label": "Petsa ng isyu (MM \/ YY)",
+        "card_start_placeholder": "Petsa ng isyu (MM \/ YY)",
+        "card_issue_number_label": "Numero ng isyu",
+        "card_issue_number_placeholder": "Numero ng isyu",
+        "card_change_label": "Baguhin",
+        "card_update_label": "I-update ang card",
+        "ends_with_label": "nagtatapos sa %{last_digits}",
+        "masked_digits_label": "•••• %{mga huling numero}",
+        "payment_method_saved": "Na-save ang paraan ng pagbabayad",
+        "card_vaulted_company_location": "Na-save ang card para sa lokasyong ito",
+        "expiry_long": "(Mag-e-expire sa %{month}\/%{year})",
+        "saved_by_payment_method": "Na-save ng %{payment_method}",
+        "pay_with_payment_method": "Magbayad gamit ang %{payment_method}",
+        "different_credit_card_label": "Gumamit ng ibang credit card",
+        "same_billing_address_label": "Pareho sa address ng pagpapadala",
+        "different_billing_address_label": "Gumamit ng ibang billing address"
       }
     },
     "pagination": {
