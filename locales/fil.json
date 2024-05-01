@@ -113,7 +113,8 @@
       },
       "order_summary": {
         "discount_title_stacking": {
-          "other": "Mga diskwento"
+          "other": "Mga diskwento",
+          "one": "Diskwento"
         },
         "discount_order_stacking": {
           "one": "Mag-order ng diskwento",
@@ -247,7 +248,10 @@
             "other": "%{count} na mga item"
           }
         },
-        "alternative_payment_currency_total": "Siningil bilang %{amount_due}"
+        "alternative_payment_currency_total": "Siningil bilang %{amount_due}",
+        "title": "Buod ng order",
+        "group_title_label": "Bahagi ng \"%{group_title}\"",
+        "discount_title": "Diskwento"
       },
       "processing": {
         "action_required": "Kinakailangan ang pagkilos"
@@ -638,6 +642,141 @@
           }
         },
         "one_time_purchase_shipping": "Isang beses na pagpapadala"
+      },
+      "contact": {
+        "civic_number_warning": "Magdagdag ng numero ng bahay kung mayroon ka",
+        "optional_last_name_label": "Apelyido (opsyonal)",
+        "different_shipping_address_label": "Ipadala sa ibang lugar",
+        "different_shipping_address_text": "Gumamit ng isang beses na address para sa order na ito",
+        "change_company_location_link_label": "Baguhin ang lokasyon ng kumpanya",
+        "change_location_link_label": "Baguhin ang lokasyon",
+        "ship_to_company": "Ipadala sa {{companyName}}"
+      },
+      "delivery_options": {
+        "free_total_label": "Libre",
+        "ship": "barko",
+        "ship_to_address": "Ipadala sa address",
+        "shipping_address": "Address ng pagpapadala",
+        "pick_up": "Pulutin",
+        "pick_up_from_store": "Kunin sa tindahan",
+        "pick_up_locations": "Mga lokasyon ng pickup",
+        "pick_up_in_one_hour": "Karaniwan handa sa loob ng 1 oras",
+        "pick_up_in_two_hours": "Karaniwan handa sa loob ng 2 oras",
+        "pick_up_in_four_hours": "Karaniwan handa sa loob ng 4 na oras",
+        "pick_up_in_twenty_four_hours": "Karaniwang handa sa loob ng 24 na oras",
+        "pick_up_in_two_to_four_days": "Karaniwan handa sa 2-4 na araw",
+        "pick_up_in_five_or_more_days": "Karaniwang handa sa loob ng 5+ araw",
+        "pick_up_in_zero_to_two_hours": "Handa nang kunin sa loob ng 2 oras",
+        "pick_up_in_two_to_four_hours": "Handa nang kunin sa loob ng 4 na oras",
+        "pick_up_immediately": "Handa na para sa pickup ngayon",
+        "pick_up_next_day": "Handa nang kunin sa susunod na araw",
+        "pickup_point_method_definition": "Ipadala sa pickup point",
+        "retail_method_definition": "Tingiang pagpapadala",
+        "none_method_definition": "Walang pagpapadala",
+        "subscription_pickup_information": "Malalapat ang paraan ng paghahatid na ito sa lahat ng item sa order na ito at sa lahat ng mga order sa hinaharap para sa subscription na ito."
+      },
+      "customer_account": {
+        "not_user_label": "Hindi %{first_name}?",
+        "have_an_account_label": "May account?",
+        "sign_in_link_label": "Mag log in",
+        "save_my_information_label": "I-save ang impormasyong ito para sa susunod na pagkakataon",
+        "invalid_address": "Ang napiling address ay hindi wasto. %{update_address_link} o pumili ng ibang address.",
+        "incomplete_address": "Hindi kumpleto ang napiling address. %{update_address_link} o pumili ng ibang address.",
+        "invalid_shipping_method_summary": "Pumili ng wastong address sa pagpapadala upang makita ang mga available na paraan ng pagpapadala",
+        "saved_address_option_description": {
+          "one": "Mayroon kang {{count}} na naka-save na address.",
+          "other": "Mayroon kang {{count}} na mga naka-save na address."
+        },
+        "saved_address_option_link": "Gumamit ng naka-save na address",
+        "saved_address_modal_title": "Gamitin ang aking naka-save na address"
+      },
+      "stock": {
+        "page_title": "Mga isyu sa imbentaryo",
+        "items_unavailable_notice": "Ang ilang mga item ay hindi na magagamit.",
+        "product_column_header": "Mga produkto",
+        "quantity_column_header": "Dami",
+        "price_column_header": "Presyo",
+        "status_column_header": "Katayuan",
+        "removed_from_cart_notice": "Inalis sa cart",
+        "sold_out_label": "Ubos na",
+        "reduced_label": "Nabawasan",
+        "reduced_with_quantity_label": "%{quantity_available} na lang ang natitira",
+        "remove_from_cart_button_label": "Alisin sa cart",
+        "continue_shopping_button_label": "Magpatuloy",
+        "go_back_to_cart_button_label": "Bumalik ka sa cart ko",
+        "remove": "Alisin",
+        "return_to_store_label": "Bumalik sa tindahan",
+        "continue_cta_label": "Ipagpatuloy ang pag-checkout",
+        "item_label": {
+          "one": "{{count}} item",
+          "other": "{{count}} na mga item"
+        },
+        "empty_cart_label": "Walang laman ang iyong cart",
+        "quantity_update": {
+          "page_title": "Dami ng update",
+          "title": "Dami ng update",
+          "description": "Ang mga available na dami para sa mga item na ito ay nagbago at na-update sa iyong cart."
+        },
+        "unpurchasable_product": {
+          "title": "Hindi mabibiling produkto",
+          "header": "Inalis ang ilang item sa iyong cart",
+          "message": "Ang mga item na ito ay hindi magagamit para sa mga B2B na order.",
+          "status_column_header": "Hindi magagamit"
+        },
+        "unpurchasable_product_generic": {
+          "title": "Hindi mabibiling produkto",
+          "header": "Inalis ang ilang item sa iyong cart",
+          "message": "Ang mga item na ito ay hindi magagamit.",
+          "status_column_header": "Hindi magagamit"
+        },
+        "unshippable_product": {
+          "title": "Walang available na delivery",
+          "header": {
+            "one": "Walang available na paghahatid para sa %{count} item",
+            "other": "Walang available na paghahatid para sa %{count} item"
+          },
+          "message": {
+            "one": "Aalisin ang item na ito sa iyong cart dahil walang available na paraan ng paghahatid para sa iyong address.",
+            "other": "Aalisin ang mga item na ito sa iyong cart dahil walang available na paraan ng paghahatid para sa iyong address."
+          },
+          "status_column_header": "Walang delivery"
+        },
+        "price_update": {
+          "title": "Update sa presyo",
+          "description": "Nagbago ang mga presyo para sa mga item na ito at na-update sa iyong cart."
+        },
+        "out_of_stock": {
+          "description": "Ang mga item na ito ay hindi na magagamit at naalis na sa iyong cart.",
+          "items_unavailable": "Ang ilang mga item ay hindi na magagamit at naalis na sa iyong cart."
+        }
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "Hindi available na produkto",
+          "other": "Hindi magagamit na mga produkto"
+        },
+        "products_not_available": {
+          "one": "Aalisin ang produktong ito sa iyong cart dahil hindi ito available sa iyong bansa\/rehiyon.",
+          "other": "Aalisin ang mga produktong ito sa iyong cart dahil hindi available ang mga ito sa iyong bansa\/rehiyon."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "Ang produktong ito ay hindi available sa iyong bansa\/rehiyon.",
+          "other": "Ang mga produktong ito ay hindi available sa iyong bansa\/rehiyon."
+        },
+        "unavailable_label": "Hindi magagamit"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "Walang available na paghahatid para sa %{count} item",
+            "other": "Walang available na paghahatid para sa %{count} item"
+          },
+          "message": {
+            "one": "Aalisin ang item na ito sa iyong cart dahil walang available na paraan ng paghahatid para sa iyong address.",
+            "other": "Aalisin ang mga item na ito sa iyong cart dahil walang available na paraan ng paghahatid para sa iyong address."
+          },
+          "label": "Walang delivery"
+        }
       }
     },
     "pagination": {
@@ -842,7 +981,134 @@
         "other": "Kung hindi sila natanggap,"
       },
       "let_us_know": "Ipaalam sa amin",
-      "contact_us": "Makipag-ugnayan sa amin."
+      "contact_us": "Makipag-ugnayan sa amin.",
+      "list_layout_accessibility_label": "Mga pagpipilian sa layout",
+      "list_title": "Mga order",
+      "order_list": {
+        "column_headers": {
+          "order": "Umorder",
+          "items": "Mga bagay",
+          "total": "Kabuuan"
+        },
+        "delivered": "Naihatid {{date}}",
+        "empty_state_order_source_description": "Ang mga order lamang na inilagay ng {{email}} ang lalabas dito.",
+        "empty_state_subtitle": "Pumunta sa tindahan upang mag-order.",
+        "empty_state_title": "Wala pang order",
+        "empty_state_title_for_pending_orders": "Walang mga nakabinbing order",
+        "estimated_shortform": "Est. {{date}}",
+        "estimated_delivery": "Inaasahang {{date}}",
+        "one_images_accessibility_label": "Kasama sa order ang {{lineItemName1}}",
+        "two_images_accessibility_label": "Kasama sa order ang {{lineItemName1}} , {{lineItemName2}}",
+        "three_images_accessibility_label": "Kasama sa order ang {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}}",
+        "four_images_accessibility_label": "Kasama sa order ang {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} , {{lineItemName4}}",
+        "more_than_three_products_accessibility_label": "Kasama sa order ang {{lineItemName1}} , {{lineItemName2}} , at {{numberOfAdditionalProducts}} pang mga produkto",
+        "more_than_four_products_accessibility_label": "Kasama sa order ang {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} , at {{numberOfAdditionalProducts}} pang mga produkto",
+        "plus_more": "+ {{numberOfAdditionalProducts}}",
+        "plus_more_products": "+ {{numberOfAdditionalProducts}} na mga produkto",
+        "carousel": {
+          "one_products_accessibility_label": "Kasama sa order ang {{lineItemName1}} dami {{lineItemQuantity1}}",
+          "two_products_accessibility_label": "Kasama sa order ang {{lineItemName1}} dami {{lineItemQuantity1}} , {{lineItemName2}} dami {{lineItemQuantity2}}",
+          "three_products_accessibility_label": "Kasama sa order ang {{lineItemName1}} dami {{lineItemQuantity1}} , {{lineItemName2}} dami {{lineItemQuantity2}} , {{lineItemName3}} dami {{lineItemQuantity3}}",
+          "four_products_accessibility_label": "Kasama sa order ang {{lineItemName1}} dami {{lineItemQuantity1}} , {{lineItemName2}} dami {{lineItemQuantity2}} , {{lineItemName3}} dami {{lineItemQuantity3}} , {{lineItemName4}} dami {{lineItemQuantity4}}",
+          "five_products_accessibility_label": "Kasama sa order ang {{lineItemName1}} dami {{lineItemQuantity1}} , {{lineItemName2}} dami {{lineItemQuantity2}} , {{lineItemName3}} dami {{lineItemQuantity3}} , {{lineItemName4}} dami {{lineItemQuantity4}} dami {{lineItemName5}} dami {{lineItemQuantity5}}",
+          "six_products_accessibility_label": "Kasama sa order ang {{lineItemName1}} dami {{lineItemQuantity1}} , {{lineItemName2}} dami {{lineItemQuantity2}} , {{lineItemName3}} dami {{lineItemQuantity3}} , {{lineItemName4}} dami {{lineItemQuantity4}} dami {{lineItemName5}} dami {{lineItemQuantity5}} , {{lineItemName6}} dami {{lineItemQuantity6}}",
+          "six_and_more_products_accessibility_label": "Kasama sa order ang {{lineItemName1}} dami {{lineItemQuantity1}} , {{lineItemName2}} dami {{lineItemQuantity2}} , {{lineItemName3}} dami {{lineItemQuantity3}} , {{lineItemName4}} dami {{lineItemQuantity4}} dami {{lineItemName5}} dami {{lineItemQuantity5}} , {{lineItemName6}} dami {{lineItemQuantity6}} at higit pa",
+          "view_order_details": "Tingnan ang mga detalye ng order",
+          "previous": "Nakaraang",
+          "next": "Susunod"
+        },
+        "items": {
+          "one": "{{count}} item",
+          "other": "{{count}} na mga item"
+        },
+        "list_view": "Ipakita ang view ng listahan",
+        "no_filtered_results_description": "Alisin o ayusin ang mga filter para makita ang iyong mga order",
+        "no_filtered_results_title": "Walang na-filter na resulta",
+        "order_link": "Tingnan ang order {{name}}",
+        "order_number": "Order {{name}}",
+        "orders_title": "Nakumpirma",
+        "pagination": {
+          "nav_accessibility_label": "Nag-order ng mga navigation button",
+          "next": "Susunod",
+          "next_accessibility_label": "Mga susunod na order",
+          "previous": "Nakaraan",
+          "previous_accessibility_label": "Mga nakaraang order",
+          "load_more": "Mag-load pa",
+          "load_more_accessibility_label": "Mag-load ng higit pang mga order"
+        },
+        "order_status_message": {
+          "list_view": {
+            "view_order_for_details": "Tingnan ang order para sa mga detalye",
+            "estimated_delivery": "Inaasahang {{date}}",
+            "last_updated": "Huling na-update {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "Est. {{date}}"
+          }
+        },
+        "payment_status": {
+          "list_view": {
+            "overdue": "Overdue ang pagbabayad",
+            "due": "Dapat bayaran {{date}}",
+            "due_today": "Dapat bayaran ngayong araw",
+            "due_without_date": "Dapat bayaran",
+            "due_on_fulfillment": "Pagbabayad na dapat bayaran sa katuparan",
+            "pay_to_confirm": "Magbayad para makumpirma",
+            "payment_not_due": "Hindi pa dapat bayaran"
+          },
+          "table_view": {
+            "overdue": "Overdue na",
+            "due": "{{date}}",
+            "due_today": "Nakatakda ngayong araw",
+            "paid": "Binayaran",
+            "due_without_date": "Dahil",
+            "due_on_fulfillment": "Dahil sa katuparan",
+            "pay_to_confirm": "Magbayad para makumpirma",
+            "payment_not_due": "Hindi pa due"
+          }
+        },
+        "sort_by": "Pagbukud-bukurin ayon sa: {{option}}",
+        "sort_hide_options_accessibility_label": "Itago ang mga opsyon sa pag-uuri para sa mga nakumpirmang order.",
+        "sort_show_options_accessibility_label": "Ipakita ang mga opsyon sa pag-uuri para sa mga nakumpirmang order.",
+        "sort_currently_sorted_by_accessibility_label": "Kasalukuyang pinagbubukod-bukod ayon sa: {{option}}",
+        "sort_title": "Pagbukud-bukurin",
+        "sort": {
+          "date": {
+            "newest": "Pinakabago hanggang sa pinakaluma",
+            "oldest": "Pinakaluma hanggang sa pinakabago"
+          },
+          "location": {
+            "ascending": "Lokasyon (AZ)",
+            "descending": "Lokasyon (ZA)"
+          },
+          "order_number": {
+            "ascending": "Numero ng order (mababa hanggang mataas)",
+            "descending": "Numero ng order (mataas hanggang mababa)"
+          },
+          "order_total": {
+            "ascending": "Kabuuan ng order (mababa hanggang mataas)",
+            "descending": "Kabuuan ng order (mataas hanggang mababa)"
+          }
+        },
+        "filter_title": "Salain",
+        "filter": {
+          "clear_section": "I-clear ang seksyon",
+          "clear_all": "Alisin lahat",
+          "apply": "Mag-apply",
+          "date": {
+            "start_date": "Petsa ng pagsisimula",
+            "end_date": "Petsa ng pagtatapos",
+            "title": "Petsa ng order",
+            "today": "Ngayong araw",
+            "last_7_days": "Huling 7 araw",
+            "last_30_days": "Huling 30 araw",
+            "last_90_days": "Huling 90 araw",
+            "last_365_days": "Huling 12 buwan"
+          }
+        },
+        "table_view": "Ipakita ang view ng talahanayan",
+        "show_order_actions_accessibility_label": "Ipakita ang mga pagkilos ng order para sa order na {{name}}"
+      }
     },
     "order_details": {
       "shipment_timeline": {
@@ -868,6 +1134,181 @@
         "button": "Mag-log out kahit saan",
         "warning_message": "Mala-log out ka rin sa device na ito."
       }
+    },
+    "B2B": {
+      "location_selection": {
+        "selection_cancel_button": "Kanselahin",
+        "selection_confirmation_button": "Pumili ng lokasyon",
+        "title": "Saang lokasyon ka bibili?",
+        "clear_search": "I-clear ang paghahanap",
+        "try_new_search": "Subukan ang isang bagong paghahanap"
+      },
+      "addresses": {
+        "add_billing_address_button": "Magdagdag ng billing address",
+        "add_billing_address_section_accessibility_label": "Magdagdag ng billing address",
+        "add_shipping_address_button": "Magdagdag ng address sa pagpapadala",
+        "add_shipping_address_section_accessibility_label": "Magdagdag ng address sa pagpapadala",
+        "cancel_adding_billing_address_accessibility_label": "Kanselahin ang pagdaragdag ng billing address",
+        "cancel_adding_shipping_address_accessibility_label": "Kanselahin ang pagdaragdag ng address sa pagpapadala",
+        "save_new_billing_address_accessibility_label": "I-save ang billing address",
+        "save_new_shipping_address_accessibility_label": "I-save ang address ng pagpapadala",
+        "shipping_address_card_title": "Address ng pagpapadala"
+      },
+      "orders": {
+        "draft_order_list": {
+          "hide_all": "Itago lahat",
+          "show_all": "Ipakita lahat",
+          "hide_all_accessibility_label": "Itago ang lahat ng mga order sa pagsusuri",
+          "show_all_accessibility_label": "Ipakita ang lahat ng mga order sa pagsusuri",
+          "show_all_orders_in_review": "Ipakita ang lahat ng mga order sa pagsusuri",
+          "show_less_orders_in_review": "Magpakita ng mas kaunting mga order sa pagsusuri",
+          "title": "Nakabinbin",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "Wala kang mga nakabinbing order",
+            "pending_orders": {
+              "one": "Mayroon kang {{count}} na nakabinbing order",
+              "other": "Mayroon kang {{count}} na mga nakabinbing order"
+            },
+            "more_than_pagination_length": "Mayroon kang higit sa {{count}} na mga nakabinbing order"
+          },
+          "pending_orders_count_more_than_pagination_length": "{{count}} +",
+          "pagination": {
+            "nav_accessibility_label": "Mga order sa review navigation buttons"
+          }
+        },
+        "order_list_column_headers_location": "Lokasyon",
+        "order_list_column_headers_contact": "Makipag-ugnayan",
+        "removed_company_contact_tooltip": "Inalis sa kumpanya"
+      },
+      "draft_order_details": {
+        "draft_order_subtitle": "Nakumpirma {{date}} mula sa order na {{draftOrderName}}",
+        "loading": "Nilo-load ang mga detalye ng order",
+        "loading_finished_accessibility_message": "Na-load na ang mga detalye ng order",
+        "payment_status": {
+          "pending": {
+            "banner_overdue": {
+              "one": "Ang iyong pagbabayad ay {{count}} na araw na overdue",
+              "other": "Ang iyong pagbabayad ay {{count}} (na) araw na overdue"
+            },
+            "banner_due": {
+              "one": "Ang iyong pagbabayad ay dapat bayaran sa {{count}} araw",
+              "other": "Ang iyong pagbabayad ay dapat bayaran sa loob ng {{count}} araw"
+            },
+            "banner_due_today": "Ang iyong pagbabayad ay dapat bayaran ngayon",
+            "title": "Dapat bayaran",
+            "title_with_date": "Dapat bayaran {{date}}",
+            "title_due_on_receipt": "Hindi pa dapat bayaran",
+            "title_due_on_fulfillment": "Pagbabayad na dapat bayaran sa katuparan",
+            "description_overdue": "Late ang bayad mo.",
+            "description_partially_paid": "Ang order na ito ay bahagyang binayaran. Mayroon kang natitirang balanse.",
+            "description_authorized": "Sisingilin ang iyong paraan ng pagbabayad sa takdang petsa, o maaari kang magbayad ngayon.",
+            "description_waiting_for_manual_payment": "Ang order ay mamarkahan bilang bayad kapag natanggap na ang bayad.",
+            "description_due_on_receipt": "Makakatanggap ka ng invoice kapag nakatakda na ang pagbabayad.",
+            "description_due_on_receipt_partially_paid": "Ang order na ito ay bahagyang binayaran. Mayroon kang natitirang balanse. Makakatanggap ka ng invoice kapag nakatakda na ang pagbabayad.",
+            "description_due_on_fulfillment": "Ang pagbabayad ay dapat bayaran kapag ang lahat ng mga item sa order na ito ay natupad.",
+            "description_due_on_fulfillment_partially_paid": "Ang order na ito ay bahagyang binayaran. Mayroon kang natitirang balanse. Ang pagbabayad ay dapat bayaran kapag ang lahat ng mga item sa order na ito ay natupad."
+          },
+          "draft": {
+            "description": "Napagpasyahan ang mga detalye ng pagbabayad kapag nakumpirma ang order.",
+            "title": "Hindi pa dapat bayaran",
+            "in_review": {
+              "description": "Napagpasyahan ang mga detalye ng pagbabayad kapag nakumpirma ang order.",
+              "title": "Hindi pa dapat bayaran"
+            },
+            "submitted": {
+              "description": "Magsumite ng bayad para kumpirmahin ang order na ito.",
+              "title": "Magbayad para makumpirma"
+            }
+          },
+          "paid": {
+            "title": "Binayaran",
+            "title_with_date": "Binayaran {{date}}",
+            "description": "Ang iyong order ay ganap na nabayaran."
+          },
+          "refund": {
+            "title": "Na-refund",
+            "title_with_date": "Na-refund {{date}}",
+            "description_full_refund": "Nakatanggap ka ng buong refund para sa order na ito.",
+            "description_single_refund": "Nakatanggap ka ng bahagyang refund para sa order na ito.",
+            "description_multiple_refunds": "Nakatanggap ka ng mga bahagyang refund para sa order na ito."
+          },
+          "canceled": {
+            "title": "Kinansela ang pagbabayad",
+            "description": "Hindi ka sinisingil."
+          },
+          "pay_now": "Magbayad na",
+          "pay_now_accessibility_label": "Magbayad ngayon para sa order na {{orderName}}",
+          "title": "Katayuan ng pagbabayad"
+        },
+        "order_timeline": {
+          "expand_events_label": "Ipakita ang mga detalye",
+          "expand_events_accessibility_label": "Ipakita ang mga detalye ng draft na order",
+          "hide_events_label": "Itago ang mga detalye",
+          "hide_events_accessibility_label": "Itago ang mga detalye ng draft na order"
+        },
+        "subtitle": "Isinumite {{date}}",
+        "title": "Order {{name}}"
+      },
+      "payment_methods": {
+        "payment_delete": {
+          "description_without_replacement": "Hindi na magiging available ang paraan ng pagbabayad na ito para sa mga pagbili sa hinaharap mula sa lokasyong ito.",
+          "description_with_replacement": "Ang pagtanggal sa paraan ng pagbabayad na ito ay makakaapekto sa mga preauthorized na pagbabayad para sa lokasyong ito. Palitan ito ng alternatibong paraan ng pagbabayad para patuloy na makatanggap ng mga paparating na order."
+        },
+        "payment_details": {
+          "order_label": "Order {{name}}",
+          "draft_label": "Draft order {{name}}"
+        }
+      },
+      "purchase_order_number": {
+        "add_accessibility_label": "Magdagdag ng PO number",
+        "add_modal_title": "Magdagdag ng PO number",
+        "cancel": "Kanselahin",
+        "close_modal_accessibility_label": "Isara ang PO number modal",
+        "discard": "Itapon",
+        "discard_changes_modal_title": "Itapon ang mga pagbabago?",
+        "edit_accessibility_label": "I-edit ang PO number",
+        "edit_modal_title": "I-edit ang PO number",
+        "empty_state": "Walang PO number",
+        "modal_po_number_input_label": "Numero ng PO",
+        "modal_po_number_input_max_length_error": "Ang mga numero ng PO ay may maximum na {{maxLength}} na mga character.",
+        "save": "I-save",
+        "title": "PO # {{poNumber}}"
+      }
+    },
+    "errors": {
+      "address_deletion_error": {
+        "description": "Nagkaroon ng problema sa pagtanggal ng address na ito. Subukang muli o i-refresh ang pahina."
+      },
+      "addresses_loading_issue": {
+        "description": "Error sa koneksyon. Suriin ang iyong koneksyon sa internet at subukang muli."
+      },
+      "banner_title": {
+        "one": "Mayroong {{count}} na error",
+        "other": "Mayroong {{count}} na mga error"
+      },
+      "failed_address_creation": {
+        "description": "Nagkaroon ng problema sa paggawa ng iyong address. Subukang i-refresh ang page na ito o tingnan ang iyong koneksyon sa internet."
+      },
+      "failed_address_update": {
+        "description": "Nagkaroon ng problema sa pag-update ng iyong address. Subukang i-refresh ang page na ito o tingnan ang iyong koneksyon sa internet."
+      },
+      "load_orders_error": {
+        "title": "Hindi ma-load ang mga order"
+      }
+    },
+    "account_information": {
+      "profile_card": {
+        "save_accessibility_label": "I-save ang profile"
+      },
+      "profile_update_confirmation_message": "Na-update ang profile",
+      "people": {
+        "pagination": {
+          "load_more": "Mag-load pa",
+          "load_more_accessibility_label": "Mag-load ng mas maraming tao",
+          "loading_accessibility_label": "Naglo-load ng mga tao"
+        }
+      },
+      "add_button": "Idagdag"
     }
   },
   "sections": {
