@@ -1439,8 +1439,104 @@
           "with_pending_orders_and_subscriptions": "Ang pagtanggal sa paraan ng pagbabayad na ito ay makakaapekto sa mga preauthorized na pagbabayad. Maliban kung pipili ka ng alternatibong paraan ng pagbabayad, ang paraan ng pagbabayad na ito ay sisingilin pa rin para sa anumang natitirang balanse sa mga umiiral nang order. Ang pagpili ng alternatibong paraan ng pagbabayad ay magbibigay-daan sa iyong makatanggap ng paparating na mga order ng subscription nang walang pagkaantala.",
           "with_pending_orders": "Ang pagtanggal sa paraan ng pagbabayad na ito ay mag-aalis nito sa iyong account at hindi na magiging available para sa mga pagbili sa hinaharap. Maliban kung pipili ka ng alternatibong paraan ng pagbabayad, sisingilin pa rin ito para sa anumang natitirang balanse sa mga umiiral nang order.",
           "with_subscriptions": "Ang pagtanggal sa paraan ng pagbabayad na ito ay makakaapekto sa mga preauthorized na pagbabayad. Palitan ito ng alternatibong paraan ng pagbabayad para patuloy na makatanggap ng mga paparating na order."
+        },
+        "warning_message_without_replacement": {
+          "with_pending_orders_and_subscriptions": "Ang pagtanggal sa paraan ng pagbabayad na ito ay makakaapekto sa mga preauthorized na pagbabayad. Sisingilin pa rin ang paraan ng pagbabayad na ito para sa anumang natitirang balanse sa mga kasalukuyang order, ngunit hindi ka makakatanggap ng mga paparating na order ng subscription. Magdagdag ng alternatibong paraan ng pagbabayad para patuloy na makatanggap ng mga order ng subscription.",
+          "with_pending_orders": "Ang pagtanggal sa paraan ng pagbabayad na ito ay mag-aalis nito sa iyong account at hindi na magiging available para sa mga pagbili sa hinaharap. Sisingilin pa rin ito para sa anumang natitirang balanse sa mga umiiral nang order.",
+          "with_subscriptions": "Ang pagtanggal sa paraan ng pagbabayad na ito ay makakaapekto sa mga preauthorized na pagbabayad. Magdagdag ng alternatibong paraan ng pagbabayad para patuloy na makatanggap ng mga paparating na order."
+        },
+        "payment_method_selector_placeholder": "Pumili ng kapalit na paraan ng pagbabayad (opsyonal)",
+        "payment_method_selector_no_alternative_payment": "Walang paraan ng kapalit",
+        "replace_method_with_new_method_description": "Ang iyong {{currentPaymentMethodName}} ay tatanggalin at papalitan ng iyong {{newPaymentMethodName}} .",
+        "error_when_deleting": "Humihingi kami ng paumanhin ngunit may nangyaring mali at hindi namin matanggal ang paraan ng pagbabayad na ito. Pakisubukang muli mamaya o i-refresh ang pahina.",
+        "delete_and_replace_button": "Tanggalin at palitan",
+        "delete_and_replace_button_accessibility_label": "Tanggalin ang {{currentPaymentMethodName}} at palitan ng {{newPaymentMethodName}} .",
+        "deleted_successfully": "Matagumpay na natanggal ang paraan ng pagbabayad.",
+        "loading_available_payment_methods_accessibility_label": "Nilo-load ang mga available na paraan ng pagbabayad"
+      },
+      "add_payment_method": {
+        "title": "Magdagdag ng paraan ng pagbabayad",
+        "payment_method_added_confirmation": "Idinagdag ang paraan ng pagbabayad",
+        "billing_address": {
+          "add_billing_address_button": "Magdagdag ng bago",
+          "add_billing_address_button_accessibility_label": "Magdagdag ng bagong billing address",
+          "choose_billing_address_from_list_button": "Pumili sa listahan",
+          "choose_billing_address_from_list_button_accessibility_label": "Pumili ng billing address mula sa listahan",
+          "missing_billing_address_error_message": "Mangyaring tumukoy ng billing address",
+          "default_checkbox": "Itakda bilang default na paraan ng pagbabayad"
         }
       }
+    },
+    "payment_method_brands": {
+      "discover": "Matuklasan",
+      "dinersclub": "Diners club",
+      "shoppay": "Bayad sa Tindahan"
+    },
+    "shop_policies": {
+      "legal_notice": "Legal na paunawa",
+      "privacy_policy": "Patakaran sa privacy",
+      "refund_policy": "Patakaran sa refund",
+      "shipping_policy": "Patakaran sa Pagpapadala",
+      "subscription_policy": "Patakaran sa subscription",
+      "terms_of_sale": "Mga tuntunin ng pagbebenta",
+      "terms_of_service": "Mga Tuntunin ng Serbisyo"
+    },
+    "ui_components": {
+      "closeNotification": "Isara",
+      "expandNotification": "Tingnan ang higit pa",
+      "closeModal": "Isara",
+      "submit": "Ipasa",
+      "processing": "Pinoproseso…",
+      "increase": "Dagdagan {{type}}",
+      "decrease": "Bawasan ang {{type}}",
+      "minimumReached": "Naabot na ang minimum na {{value}}",
+      "maximumReached": "Naabot na ang maximum na {{value}}",
+      "january": "Enero",
+      "february": "Pebrero",
+      "march": "Marso",
+      "april": "Abril",
+      "june": "Hunyo",
+      "july": "Hulyo",
+      "august": "Agosto",
+      "september": "Setyembre",
+      "october": "Oktubre",
+      "november": "Nobyembre",
+      "december": "Disyembre",
+      "monday": "Lunes",
+      "tuesday": "Martes",
+      "wednesday": "Miyerkules",
+      "thursday": "Huwebes",
+      "friday": "Biyernes",
+      "saturday": "Sabado",
+      "sunday": "Linggo",
+      "wednesdayAbbreviation": "Kami",
+      "fridayAbbreviation": "Sinabi ni Fr",
+      "showNextMonth": "Ipakita sa susunod na buwan, {{month}} {{year}}",
+      "showPreviousMonth": "Ipakita ang nakaraang buwan, {{month}} {{year}}",
+      "rangeStart": "Simula ng saklaw",
+      "inRange": "Nasa hanay",
+      "rangeEnd": "dulo ng saklaw",
+      "autocompleteOptionsAvailable": {
+        "one": "{{count}} item na available",
+        "other": "{{count}} na mga item ang available"
+      },
+      "removeItem": "Alisin ang {{label}}",
+      "removeTag": "Alisin ang tag",
+      "month": {
+        "one": "buwan",
+        "other": "buwan"
+      }
+    },
+    "profile_preview_bar": {
+      "customize_button": "I-customize",
+      "hide_bar": "Itago ang Bar",
+      "navigate_to_admin": "Mag-navigate sa admin",
+      "close_preview": "Isara ang preview",
+      "previewing": "Pini-preview mo:",
+      "saved_at": "Na-save {{date}} noong {{time}}",
+      "viewing": "Tinitingnan mo:",
+      "not_available": "Hindi available ang data ng profile",
+      "actions_button": "Mga aksyon"
     }
   },
   "sections": {
