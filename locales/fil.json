@@ -727,6 +727,140 @@
       "contact": "Makipag-ugnayan",
       "contact_information": "Impormasyon sa pakikipag-ugnayan",
       "company": "kumpanya"
+    },
+    "settings": {
+      "title": "Mga setting",
+      "loading_accessibility_message": "Nilo-load ang pahina ng mga setting",
+      "log_out_everywhere": {
+        "title": "Mag-log out kahit saan",
+        "description": "Kung nawalan ka ng device o may mga alalahanin sa seguridad, mag-log out kahit saan upang matiyak ang seguridad ng iyong account.",
+        "button": "Mag-log out kahit saan",
+        "warning_message": "Mala-log out ka rin sa device na ito."
+      }
+    }
+  },
+  "sections": {
+    "announcements": {
+      "previous_announcement": "Nakaraang anunsyo",
+      "next_announcement": "Susunod na anunsyo",
+      "announcement": "Anunsyo",
+      "announcement_bar": "Bar ng anunsyo"
+    },
+    "header": {
+      "announcement": "Anunsyo",
+      "cart_count": {
+        "one": "{{ count }} item",
+        "other": "{{ count }} item"
+      }
+    },
+    "cart": {
+      "title": "Ang iyong kariton",
+      "caption": "Mga item sa cart",
+      "remove_title": "Alisin {{ title }}",
+      "estimated_total": "Tinatayang kabuuan",
+      "new_estimated_total": "Bagong tinantyang kabuuan",
+      "note": "Mag-order ng mga espesyal na tagubilin",
+      "checkout": "Tignan mo",
+      "empty": "Walang laman ang iyong cart",
+      "cart_error": "Nagkaroon ng error habang ina-update ang iyong cart. Pakisubukang muli.",
+      "cart_quantity_error_html": "Maaari ka lamang magdagdag ng {{ quantity }} ng item na ito sa iyong cart.",
+      "taxes_and_shipping_policy_at_checkout_html": "Mga Buwis, Diskwento at <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">pagpapadala<\/a> na kinakalkula sa pag-checkout",
+      "taxes_included_but_shipping_at_checkout": "Kasama ang buwis at pagpapadala at mga diskwento na kinakalkula sa pag-checkout",
+      "taxes_included_and_shipping_policy_html": "Kasama ang buwis. <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">Pagpapadala<\/a> at mga diskwento na kinakalkula sa pag-checkout.",
+      "taxes_and_shipping_at_checkout": "Ang mga buwis, diskwento at pagpapadala ay kinakalkula sa pag-checkout",
+      "headings": {
+        "product": "produkto",
+        "price": "Presyo",
+        "total": "Kabuuan",
+        "quantity": "Dami",
+        "image": "Larawan ng produkto"
+      },
+      "login": {
+        "title": "May account?",
+        "paragraph_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\" class=\"link underlined-link\">Mag-log in<\/a> upang mag-check out nang mas mabilis."
+      }
+    },
+    "footer": {
+      "payment": "Mga paraan ng pagbabayad"
+    },
+    "featured_blog": {
+      "view_all": "Tingnan lahat",
+      "onboarding_title": "Post sa blog",
+      "onboarding_content": "Bigyan ang iyong mga customer ng buod ng iyong post sa blog"
+    },
+    "featured_collection": {
+      "view_all": "Tingnan lahat",
+      "view_all_label": "Tingnan ang lahat ng produkto sa {{ collection_name }} na koleksyon"
+    },
+    "collection_list": {
+      "view_all": "Tingnan lahat"
+    },
+    "collection_template": {
+      "empty": "Walang nakitang mga produkto",
+      "title": "Koleksyon",
+      "use_fewer_filters_html": "Gumamit ng mas kaunting mga filter o <a class=\"&lt;span class='notranslate'&gt;{{ class }}&lt;\/span&gt;\" href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">alisin ang lahat<\/a>"
+    },
+    "video": {
+      "load_video": "Mag-load ng video: {{ description }}"
+    },
+    "slideshow": {
+      "load_slide": "I-load ang slide",
+      "previous_slideshow": "Nakaraang slide",
+      "next_slideshow": "Susunod na slide",
+      "pause_slideshow": "I-pause ang slideshow",
+      "play_slideshow": "I-play ang slideshow"
+    },
+    "page": {
+      "title": "Pamagat ng pahina"
+    },
+    "quick_order_list": {
+      "product_total": "Subtotal ng produkto",
+      "view_cart": "Tingnan ang cart",
+      "each": "{{ money }} \/ea",
+      "product": "produkto",
+      "variant_total": "Kabuuan ng variant",
+      "items_added": {
+        "one": "{{ quantity }} item na idinagdag",
+        "other": "{{ quantity }} item ang idinagdag"
+      },
+      "items_removed": {
+        "one": "{{ quantity }} item ang inalis",
+        "other": "{{ quantity }} item ang inalis"
+      },
+      "product_variants": "Mga variant ng produkto",
+      "total_items": "Kabuuang mga item",
+      "remove_all_single_item_confirmation": "Alisin ang 1 item sa iyong cart?",
+      "remove_all_items_confirmation": "Alisin ang lahat ng {{ quantity }} item mula sa iyong cart?",
+      "remove_all": "Alisin lahat",
+      "cancel": "Kanselahin",
+      "min_error": "Ang item na ito ay may minimum na {{ min }}",
+      "max_error": "Ang item na ito ay may maximum na {{ max }}",
+      "step_error": "Maaari mo lamang idagdag ang item na ito sa mga dagdag na {{ step }}"
+    }
+  },
+  "general": {
+    "password_page": {
+      "login_form_heading": "Ipasok ang tindahan gamit ang password:",
+      "login_password_button": "Ipasok gamit ang password",
+      "login_form_password_placeholder": "Ang iyong password",
+      "login_form_error": "Maling password!",
+      "login_form_submit": "Pumasok",
+      "admin_link_html": "Ikaw ba ang may-ari ng tindahan? <a href=\"\/admin\" class=\"link underlined-link\">Mag-login dito<\/a>",
+      "powered_by_shopify_html": "Ang tindahan na ito ay papaganahin ng {{ shopify }}"
+    },
+    "social": {
+      "alt_text": {
+        "share_on_facebook": "Ibahagi sa Facebook",
+        "share_on_twitter": "Ibahagi sa X",
+        "share_on_pinterest": "I-pin sa Pinterest"
+      }
+    },
+    "continue_shopping": "Ipagpatuloy ang pamimili",
+    "pagination": {
+      "label": "Pagbilang ng pahina",
+      "page": "{{ number }}",
+      "next": "Susunod na pahina",
+      "previous": "Nakaraang pahina"
     }
   }
 }
