@@ -1507,6 +1507,110 @@
       "reset_password_html": "Ang email address na ito ay nauugnay na sa isang account. Kung sa iyo ang account na ito, maaari mong <a href=\"\/account\/login#recover\">i-reset ang iyong password<\/a>",
       "verify_email": "Nagpadala kami ng email sa %{customer_email}, paki-click ang link na kasama upang i-verify ang iyong email address.",
       "product_not_available": "hindi nai-publish ang produkto para sa customer na ito."
+    },
+    "notices": {
+      "tags": {
+        "remove_products": "Alisin ang tag na %{tag}"
+      }
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "Salamat sa pag-subscribe sa aming mailing list.",
+        "disclaimer": "Maaari kang mag-unsubscribe anumang oras.",
+        "unsubscribe": "Mag-unsubscribe"
+      },
+      "unsubscribed": {
+        "confirmation": "Nag-unsubscribe ka sa aming mailing list.",
+        "disclaimer": "Hindi ka na makakatanggap ng anumang mga update sa marketing mula sa amin. Maaari kang mag-subscribe muli anumang oras.",
+        "preview": "Pini-preview mo kung ano ang makikita ng mga customer kapag nag-unsubscribe sila."
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>Nag-opt in ka sa pag-email sa bukas na pagsubaybay.<\/b>",
+          "visibility": "Ang mga rate ng bukas na email ay iuulat nang hindi nagpapakilala. Makikita lang namin kung nagbukas ka ng email bilang bahagi ng pinagsama-samang rate ng pagbubukas ng email.",
+          "opt_out_html": "Maaari kang <a style=\"text-decoration:underline;\" href=\"%{link}\">mag-opt out<\/a> sa email open tracking kung ayaw mong ibahagi ang impormasyong ito.",
+          "preview_bar": "Pini-preview mo kung ano ang makikita ng mga customer kapag nag-opt in sila sa email na bukas na pagsubaybay."
+        },
+        "opt_out": {
+          "opted_out_html": "<b>Nag-opt out ka sa email open tracking.<\/b>",
+          "visibility": "Hindi namin makikita kung nabuksan mo ang aming mga email.",
+          "opt_in_html": "<a style=\"text-decoration:underline;\" href=\"%{link}\">Mag-opt in<\/a> sa email bukas na pagsubaybay.",
+          "preview_bar": "Pini-preview mo kung ano ang makikita ng mga customer kapag nag-opt out sila sa email open tracking."
+        },
+        "no_longer_track": {
+          "status_html": "<b>Hindi na namin sinusubaybayan ang anumang email na bubukas.<\/b>",
+          "privacy_policy": "Pagkatapos maipadala ang email na ito, na-update namin ang aming patakaran sa privacy at hindi na namin nagbubukas ang track."
+        },
+        "track": {
+          "status_html": "<b>Iniuulat ang pagsubaybay sa bukas na email.<\/b>",
+          "visibility": "Titingnan lang namin kung nabuksan mo ang email, bilang bahagi ng kabuuang rate ng pagbubukas ng email."
+        },
+        "updated_policy": {
+          "status_html": "<b>Iniuulat ang pagsubaybay sa bukas na email.<\/b>",
+          "visibility": "Na-update namin ang aming patakaran, at ngayon ay subaybayan ang mga email na bubukas. Ang mga rate ng bukas na email ay iuulat nang hindi nagpapakilala. Makikita lang namin kung nagbukas ka ng email bilang bahagi ng kabuuang rate ng pagbubukas ng email.",
+          "opt_out_html": "Kung ayaw mong ibahagi ang impormasyong ito, maaari kang <a style=\"text-decoration:underline;\" href=\"%{link}\">mag-unsubscribe.<\/a>"
+        }
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "in_stock": "Sa stock"
+        }
+      },
+      "boolean": {
+        "true_label": "Oo",
+        "false_label": "Hindi"
+      }
+    },
+    "search": {
+      "sorting": {
+        "relevance": "Kaugnayan",
+        "price_ascending": "Presyo, mababa hanggang mataas",
+        "price_descending": "Presyo, mataas hanggang mababa"
+      }
+    },
+    "page_titles": {
+      "products": "Mga produkto",
+      "shopping_cart": "Iyong Shopping Cart",
+      "create_account": "Lumikha ng Account",
+      "reset_account": "I-reset ang Account",
+      "addresses": "Mga address",
+      "search": "Maghanap",
+      "search_results": {
+        "one": "Paghahanap: %{count} resulta ang nakita para sa \"%{terms}\"",
+        "other": "Paghahanap: %{count} resulta ang nakita para sa \"%{terms}\""
+      },
+      "collections": "Mga koleksyon",
+      "not_found": "404 Hindi Natagpuan",
+      "challenge": "Hamon"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} na mga diskwento ang nailapat"
+    },
+    "challenge": {
+      "message": "Para magpatuloy, ipaalam sa amin na hindi ka robot.",
+      "error": "Hindi tama ang iyong sagot, pakisubukang muli.",
+      "submit_button_text": "Ipasa"
+    },
+    "checkpoint": {
+      "message": "Lutasin ang Captcha upang magpatuloy",
+      "error": "Nabigo ang pagpapatunay ng captcha",
+      "submit_button_text": "Ipasa"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "Karaniwan handa sa loob ng 1 oras",
+        "two_hours": "Karaniwan handa sa loob ng 2 oras",
+        "four_hours": "Karaniwan handa sa loob ng 4 na oras",
+        "twenty_four_hours": "Karaniwang handa sa loob ng 24 na oras",
+        "two_to_four_days": "Karaniwan handa sa 2-4 na araw",
+        "five_or_more_days": "Karaniwang handa sa loob ng 5+ araw",
+        "zero_to_two_hours": "Karaniwan handa sa loob ng 2 oras",
+        "two_to_four_hours": "Karaniwan handa sa loob ng 4 na oras",
+        "immediately": "Handa na para sa pickup ngayon",
+        "next_day": "Handa nang kunin sa susunod na araw"
+      }
     }
   },
   "customer_accounts": {
@@ -2026,7 +2130,17 @@
     },
     "account_information": {
       "profile_card": {
-        "save_accessibility_label": "I-save ang profile"
+        "save_accessibility_label": "I-save ang profile",
+        "cancel": "Kanselahin",
+        "cancel_accessibility_label": "Kanselahin ang pag-edit ng profile",
+        "edit": "I-edit",
+        "edit_accessibility_label": "Ibahin ang profile",
+        "email_help_text": "Ang email na ginamit para sa pag-login ay hindi mababago",
+        "first_name": "Pangalan",
+        "last_name": "Huling pangalan",
+        "no_name_provided_accessibility_label": "Walang idinagdag na pangalan",
+        "phone_number_help_text": "Ang numero ng telepono na ginamit para sa pag-login ay hindi maaaring baguhin",
+        "save": "I-save"
       },
       "profile_update_confirmation_message": "Na-update ang profile",
       "people": {
@@ -2036,7 +2150,9 @@
           "loading_accessibility_label": "Naglo-load ng mga tao"
         }
       },
-      "add_button": "Idagdag"
+      "add_button": "Idagdag",
+      "loading_accessibility_message": "Nilo-load ang impormasyon ng account",
+      "loading_finished_accessibility_message": "Na-load ang impormasyon ng account"
     },
     "payment_methods": {
       "title": "Mga paraan ng pagbabayad",
@@ -2298,6 +2414,37 @@
       "save_accessibility_label": "I-save ang address {{address}}",
       "section_title_accessibility_label": "Magdagdag ng address",
       "update_success_notification": "Na-update ang address"
+    },
+    "enable_javascript": "Upang tingnan ang iyong account, paganahin ang JavaScript sa mga setting ng iyong browser o mag-log in gamit ang isa pang browser.",
+    "navigation_and_structure": {
+      "account_menu": {
+        "hide_accessibility_label": "Itago ang menu ng Account",
+        "show_accessibility_label": "Ipakita ang menu ng Account",
+        "nav_accessibility_label": "Pag-navigate sa account",
+        "open_menu_accessibility_label": "Buksan ang Account navigation",
+        "close_menu_accessibility_label": "Isara ang Account navigation",
+        "loading_message": "Nilo-load ang nabigasyon ng Account"
+      },
+      "action_menu_accessibility_label": "Higit pang mga aksyon",
+      "close_menu_accessibility_label": "Isara ang pangunahing nabigasyon",
+      "contact_email_subject": "Makipag-ugnayan mula sa online na tindahan {{shopName}}",
+      "contact_link": "Makipag-ugnayan sa amin",
+      "delete_confirmation": {
+        "cancel": "Kanselahin",
+        "delete": "Tanggalin"
+      },
+      "dismiss_toast": "I-dismiss",
+      "document_title": "{{sectionName}} - {{shopName}} - Account",
+      "go_to_store_link": "Pumunta sa tindahan",
+      "loading_message": "Naglo-load",
+      "logout_overlay_label": "Nila-log out ka...",
+      "nav_label_accessibility_label": "Pangunahing nabigasyon",
+      "navigation_accessibility_message": "Nag-navigate ka sa {{sectionName}}",
+      "open_menu_accessibility_label": "Buksan ang pangunahing nabigasyon",
+      "orders_link_label": "Mga order",
+      "shop_logo_accessibility_label": "Logo ng {{shopName}}",
+      "subscriptions_link_label": "Mga subscription",
+      "settings_link": "Mga setting"
     }
   },
   "sections": {
