@@ -210,90 +210,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "image_with_text_RWq6Na": {
-      "type": "image-with-text",
-      "blocks": {
-        "text_6UJGNP": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "button_8Ecpkd": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "shopify:\/\/collections\/adidas",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "text_6UJGNP",
-        "button_8Ecpkd"
-      ],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image_with_text_WWUEnT": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_AK7bqq": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "text_JAAFC9": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "button_iDtjLm": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "\/collections\/adidas",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_AK7bqq",
-        "text_JAAFC9",
-        "button_iDtjLm"
-      ],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -302,8 +218,6 @@
     "featured_collection",
     "collage",
     "video",
-    "multicolumn",
-    "image_with_text_RWq6Na",
-    "image_with_text_WWUEnT"
+    "multicolumn"
   ]
 }
