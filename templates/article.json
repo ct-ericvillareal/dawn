@@ -49,7 +49,7 @@
     "custom_liquid_XGPLXW": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "Here\n{{article.metafields.custom.html_to_json_type_change.type}}",
+        "custom_liquid": "Here\n{{article.metafields.custom.html_to_json_type_change.value}}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
