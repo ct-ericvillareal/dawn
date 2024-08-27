@@ -124,6 +124,12 @@
             "inventory_threshold": 10,
             "show_inventory_quantity": true
           }
+        },
+        "custom_liquid_BwGUnb": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% assign current_variant = product.selected_or_first_available_variant %}\n  <div class=\"inventoryNote form__label\">\n  {% if current_variant.available %}\n    {% if current_variant.inventory_quantity > 0 and current_variant.inventory_quantity <= 10 %}We have {{ current_variant.inventory_quantity }} in stock\n{% elsif current_variant.inventory_quantity > 10 %}We have more than 10 in stock\n    {% endif %}\n  {% endif %}\n<\/div>"
+          }
         }
       },
       "block_order": [
@@ -141,7 +147,8 @@
         "collapsible-row-2",
         "collapsible-row-3",
         "share",
-        "inventory_4zmKpE"
+        "inventory_4zmKpE",
+        "custom_liquid_BwGUnb"
       ],
       "settings": {
         "enable_sticky_info": true,
