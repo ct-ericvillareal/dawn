@@ -136,7 +136,7 @@
       </span>
     {%- endif -%}
 
-    <label for="yourBirthMonth">Birth Month</label>
+    <!-- <label for="yourBirthMonth">Birth Month</label>
     <input list id="yourBirthMonth" name="customer[tags]">
     <datalist id="yourBirthMonth">          
     	<option value="January">January</option>
@@ -151,7 +151,10 @@
     	<option value="October">October</option>
     	<option value="November">November</option>
     	<option value="December">December</option>
-    </datalist>
+    </datalist> -->
+
+    <input type="hidden" id="customer_tags" name="customer[tags]" value="test 1"/>
+    <input type="hidden" id="customer_tags2" name="customer[tags]" value="test 2"/>
     
     <button>
       {{ 'customer.register.submit' | t }}
